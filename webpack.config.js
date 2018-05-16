@@ -1,5 +1,6 @@
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
       path              = require('path'),
+      VueLoaderPlugin   = require('vue-loader/lib/plugin'),
       webpack           = require('webpack');
 
 const projectPackage = require('./package.json');
@@ -26,7 +27,8 @@ module.exports = {
             open  : false,
             server: {baseDir: ['.']}
         }),
-        getDefinePlugin(process.env, projectPackage.version)
+        getDefinePlugin(process.env, projectPackage.version),
+        new VueLoaderPlugin()
     ],
     module : {
         rules: [
@@ -43,7 +45,16 @@ module.exports = {
                         cacheDirectory: true
                     }
                 }
-            }
+            },
+            {
+                resource: {
+                    test: /\.vue$/
+                },
+                use     : {
+                    loader : 'vue-loader',
+                    options: {}
+                }
+            },
         ]
     },
     output : {
