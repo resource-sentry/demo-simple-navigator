@@ -1,0 +1,27 @@
+{
+  "name": "@resource-sentry/demo-simple-navigator",
+  "version": "1.0.0",
+  "description": "Demonstration of Resource Sentry. Simple super hero navigation tool.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resource-sentry/demo-simple-navigator.git"
+  },
+  "keywords": [
+    "demo",
+    "resource-sentry",
+    "resources",
+    "svg",
+    "data"
+  ],
+  "author": "Nicolas Siver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resource-sentry/demo-simple-navigator/issues"
+  },
+  "homepage": "https://github.com/resource-sentry/demo-simple-navigator#readme"
+}
