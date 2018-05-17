@@ -79,19 +79,519 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _copyright = __webpack_require__(/*! ./copyright.vue */ \"./view/copyright.vue\");\n\nvar _copyright2 = _interopRequireDefault(_copyright);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n    name: 'application',\n    components: { Copyright: _copyright2.default },\n    data: function data() {\n        return {};\n    }\n}; //\n//\n//\n//\n//\n//\n//\n//\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _copyrightIcons = __webpack_require__(/*! ./copyright-icons.vue */ \"./view/copyright-icons.vue\");\n\nvar _copyrightIcons2 = _interopRequireDefault(_copyrightIcons);\n\nvar _menuList = __webpack_require__(/*! ./menu-list.vue */ \"./view/menu-list.vue\");\n\nvar _menuList2 = _interopRequireDefault(_menuList);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nexports.default = {\n    name: 'application',\n    components: { CopyrightIcons: _copyrightIcons2.default, MenuList: _menuList2.default },\n    data: function data() {\n        return {};\n    }\n};\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
-/***/ "../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright.vue?vue&type=script&lang=js":
+/***/ "../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright-icons.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************************************!*\
+  !*** ../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options!./view/copyright-icons.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nexports.default = {\n    name: 'copyright-icons'\n};\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list-item.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************************************!*\
+  !*** ../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options!./view/menu-list-item.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _rs = __webpack_require__(/*! ../model/rs */ \"./model/rs.js\");\n\nvar Rs = _interopRequireWildcard(_rs);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nexports.default = {\n    name: \"menu-item\",\n\n    props: {\n        icon: {\n            type: Number,\n            required: true\n        },\n        label: {\n            type: String,\n            required: true,\n            default: 'Undefined Label'\n        }\n    },\n\n    computed: {\n        iconAsset: function iconAsset(view) {\n            return Rs.getResource(view.icon);\n        }\n    }\n}; //\n//\n//\n//\n//\n//\n//\n\n//# sourceURL=webpack:///./view/menu-list-item.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list.vue?vue&type=script&lang=js":
 /*!************************************************************************************************************************************************!*\
-  !*** ../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options!./view/copyright.vue?vue&type=script&lang=js ***!
+  !*** ../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options!./view/menu-list.vue?vue&type=script&lang=js ***!
   \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nexports.default = {\n    name: \"copyright\"\n};\n\n//# sourceURL=webpack:///./view/copyright.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _menuListItem = __webpack_require__(/*! ./menu-list-item.vue */ \"./view/menu-list-item.vue\");\n\nvar _menuListItem2 = _interopRequireDefault(_menuListItem);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n    name: 'menu-list',\n    components: { MenuListItem: _menuListItem2.default },\n    data: function data(view) {\n        return {\n            items: view.$store.state.menuItems\n        };\n    }\n}; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n//# sourceURL=webpack:///./view/menu-list.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/babel-runtime/core-js/object/assign.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/babel-runtime/core-js/object/assign.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/object/assign */ \"../node_modules/core-js/library/fn/object/assign.js\"), __esModule: true };\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/core-js/object/assign.js?");
+
+/***/ }),
+
+/***/ "../node_modules/babel-runtime/core-js/object/define-property.js":
+/*!***********************************************************************!*\
+  !*** ../node_modules/babel-runtime/core-js/object/define-property.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/object/define-property */ \"../node_modules/core-js/library/fn/object/define-property.js\"), __esModule: true };\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/core-js/object/define-property.js?");
+
+/***/ }),
+
+/***/ "../node_modules/babel-runtime/helpers/defineProperty.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/babel-runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ \"../node_modules/babel-runtime/core-js/object/define-property.js\");\n\nvar _defineProperty2 = _interopRequireDefault(_defineProperty);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function (obj, key, value) {\n  if (key in obj) {\n    (0, _defineProperty2.default)(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n  } else {\n    obj[key] = value;\n  }\n\n  return obj;\n};\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/helpers/defineProperty.js?");
+
+/***/ }),
+
+/***/ "../node_modules/babel-runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ../node_modules/babel-runtime/helpers/extends.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _assign = __webpack_require__(/*! ../core-js/object/assign */ \"../node_modules/babel-runtime/core-js/object/assign.js\");\n\nvar _assign2 = _interopRequireDefault(_assign);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = _assign2.default || function (target) {\n  for (var i = 1; i < arguments.length; i++) {\n    var source = arguments[i];\n\n    for (var key in source) {\n      if (Object.prototype.hasOwnProperty.call(source, key)) {\n        target[key] = source[key];\n      }\n    }\n  }\n\n  return target;\n};\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/helpers/extends.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/fn/object/assign.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/library/fn/object/assign.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es6.object.assign */ \"../node_modules/core-js/library/modules/es6.object.assign.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"../node_modules/core-js/library/modules/_core.js\").Object.assign;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/fn/object/assign.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/fn/object/define-property.js":
+/*!********************************************************************!*\
+  !*** ../node_modules/core-js/library/fn/object/define-property.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es6.object.define-property */ \"../node_modules/core-js/library/modules/es6.object.define-property.js\");\nvar $Object = __webpack_require__(/*! ../../modules/_core */ \"../node_modules/core-js/library/modules/_core.js\").Object;\nmodule.exports = function defineProperty(it, key, desc) {\n  return $Object.defineProperty(it, key, desc);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/fn/object/define-property.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_a-function.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_a-function.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function (it) {\n  if (typeof it != 'function') throw TypeError(it + ' is not a function!');\n  return it;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_a-function.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_an-object.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_an-object.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var isObject = __webpack_require__(/*! ./_is-object */ \"../node_modules/core-js/library/modules/_is-object.js\");\nmodule.exports = function (it) {\n  if (!isObject(it)) throw TypeError(it + ' is not an object!');\n  return it;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_an-object.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_array-includes.js":
+/*!******************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_array-includes.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// false -> Array#indexOf\n// true  -> Array#includes\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"../node_modules/core-js/library/modules/_to-iobject.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"../node_modules/core-js/library/modules/_to-length.js\");\nvar toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ \"../node_modules/core-js/library/modules/_to-absolute-index.js\");\nmodule.exports = function (IS_INCLUDES) {\n  return function ($this, el, fromIndex) {\n    var O = toIObject($this);\n    var length = toLength(O.length);\n    var index = toAbsoluteIndex(fromIndex, length);\n    var value;\n    // Array#includes uses SameValueZero equality algorithm\n    // eslint-disable-next-line no-self-compare\n    if (IS_INCLUDES && el != el) while (length > index) {\n      value = O[index++];\n      // eslint-disable-next-line no-self-compare\n      if (value != value) return true;\n    // Array#indexOf ignores holes, Array#includes - not\n    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {\n      if (O[index] === el) return IS_INCLUDES || index || 0;\n    } return !IS_INCLUDES && -1;\n  };\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_array-includes.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_cof.js":
+/*!*******************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_cof.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var toString = {}.toString;\n\nmodule.exports = function (it) {\n  return toString.call(it).slice(8, -1);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_cof.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_core.js":
+/*!********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_core.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var core = module.exports = { version: '2.5.6' };\nif (typeof __e == 'number') __e = core; // eslint-disable-line no-undef\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_core.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_ctx.js":
+/*!*******************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_ctx.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// optional / simple context binding\nvar aFunction = __webpack_require__(/*! ./_a-function */ \"../node_modules/core-js/library/modules/_a-function.js\");\nmodule.exports = function (fn, that, length) {\n  aFunction(fn);\n  if (that === undefined) return fn;\n  switch (length) {\n    case 1: return function (a) {\n      return fn.call(that, a);\n    };\n    case 2: return function (a, b) {\n      return fn.call(that, a, b);\n    };\n    case 3: return function (a, b, c) {\n      return fn.call(that, a, b, c);\n    };\n  }\n  return function (/* ...args */) {\n    return fn.apply(that, arguments);\n  };\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_ctx.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_defined.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_defined.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// 7.2.1 RequireObjectCoercible(argument)\nmodule.exports = function (it) {\n  if (it == undefined) throw TypeError(\"Can't call method on  \" + it);\n  return it;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_defined.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_descriptors.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_descriptors.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Thank's IE8 for his funny defineProperty\nmodule.exports = !__webpack_require__(/*! ./_fails */ \"../node_modules/core-js/library/modules/_fails.js\")(function () {\n  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;\n});\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_descriptors.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_dom-create.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_dom-create.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var isObject = __webpack_require__(/*! ./_is-object */ \"../node_modules/core-js/library/modules/_is-object.js\");\nvar document = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\").document;\n// typeof document.createElement is 'object' in old IE\nvar is = isObject(document) && isObject(document.createElement);\nmodule.exports = function (it) {\n  return is ? document.createElement(it) : {};\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_dom-create.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_enum-bug-keys.js":
+/*!*****************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_enum-bug-keys.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// IE 8- don't enum bug keys\nmodule.exports = (\n  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'\n).split(',');\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_enum-bug-keys.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_export.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_export.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var global = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\");\nvar core = __webpack_require__(/*! ./_core */ \"../node_modules/core-js/library/modules/_core.js\");\nvar ctx = __webpack_require__(/*! ./_ctx */ \"../node_modules/core-js/library/modules/_ctx.js\");\nvar hide = __webpack_require__(/*! ./_hide */ \"../node_modules/core-js/library/modules/_hide.js\");\nvar has = __webpack_require__(/*! ./_has */ \"../node_modules/core-js/library/modules/_has.js\");\nvar PROTOTYPE = 'prototype';\n\nvar $export = function (type, name, source) {\n  var IS_FORCED = type & $export.F;\n  var IS_GLOBAL = type & $export.G;\n  var IS_STATIC = type & $export.S;\n  var IS_PROTO = type & $export.P;\n  var IS_BIND = type & $export.B;\n  var IS_WRAP = type & $export.W;\n  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});\n  var expProto = exports[PROTOTYPE];\n  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE];\n  var key, own, out;\n  if (IS_GLOBAL) source = name;\n  for (key in source) {\n    // contains in native\n    own = !IS_FORCED && target && target[key] !== undefined;\n    if (own && has(exports, key)) continue;\n    // export native or passed\n    out = own ? target[key] : source[key];\n    // prevent global pollution for namespaces\n    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]\n    // bind timers to global for call from export context\n    : IS_BIND && own ? ctx(out, global)\n    // wrap global constructors for prevent change them in library\n    : IS_WRAP && target[key] == out ? (function (C) {\n      var F = function (a, b, c) {\n        if (this instanceof C) {\n          switch (arguments.length) {\n            case 0: return new C();\n            case 1: return new C(a);\n            case 2: return new C(a, b);\n          } return new C(a, b, c);\n        } return C.apply(this, arguments);\n      };\n      F[PROTOTYPE] = C[PROTOTYPE];\n      return F;\n    // make static versions for prototype methods\n    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;\n    // export proto methods to core.%CONSTRUCTOR%.methods.%NAME%\n    if (IS_PROTO) {\n      (exports.virtual || (exports.virtual = {}))[key] = out;\n      // export proto methods to core.%CONSTRUCTOR%.prototype.%NAME%\n      if (type & $export.R && expProto && !expProto[key]) hide(expProto, key, out);\n    }\n  }\n};\n// type bitmap\n$export.F = 1;   // forced\n$export.G = 2;   // global\n$export.S = 4;   // static\n$export.P = 8;   // proto\n$export.B = 16;  // bind\n$export.W = 32;  // wrap\n$export.U = 64;  // safe\n$export.R = 128; // real proto method for `library`\nmodule.exports = $export;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_export.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_fails.js":
+/*!*********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_fails.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function (exec) {\n  try {\n    return !!exec();\n  } catch (e) {\n    return true;\n  }\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_fails.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_global.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_global.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028\nvar global = module.exports = typeof window != 'undefined' && window.Math == Math\n  ? window : typeof self != 'undefined' && self.Math == Math ? self\n  // eslint-disable-next-line no-new-func\n  : Function('return this')();\nif (typeof __g == 'number') __g = global; // eslint-disable-line no-undef\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_global.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_has.js":
+/*!*******************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_has.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var hasOwnProperty = {}.hasOwnProperty;\nmodule.exports = function (it, key) {\n  return hasOwnProperty.call(it, key);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_has.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_hide.js":
+/*!********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_hide.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var dP = __webpack_require__(/*! ./_object-dp */ \"../node_modules/core-js/library/modules/_object-dp.js\");\nvar createDesc = __webpack_require__(/*! ./_property-desc */ \"../node_modules/core-js/library/modules/_property-desc.js\");\nmodule.exports = __webpack_require__(/*! ./_descriptors */ \"../node_modules/core-js/library/modules/_descriptors.js\") ? function (object, key, value) {\n  return dP.f(object, key, createDesc(1, value));\n} : function (object, key, value) {\n  object[key] = value;\n  return object;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_hide.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_ie8-dom-define.js":
+/*!******************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_ie8-dom-define.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = !__webpack_require__(/*! ./_descriptors */ \"../node_modules/core-js/library/modules/_descriptors.js\") && !__webpack_require__(/*! ./_fails */ \"../node_modules/core-js/library/modules/_fails.js\")(function () {\n  return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ \"../node_modules/core-js/library/modules/_dom-create.js\")('div'), 'a', { get: function () { return 7; } }).a != 7;\n});\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_ie8-dom-define.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_iobject.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_iobject.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// fallback for non-array-like ES3 and non-enumerable old V8 strings\nvar cof = __webpack_require__(/*! ./_cof */ \"../node_modules/core-js/library/modules/_cof.js\");\n// eslint-disable-next-line no-prototype-builtins\nmodule.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {\n  return cof(it) == 'String' ? it.split('') : Object(it);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_iobject.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_is-object.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_is-object.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function (it) {\n  return typeof it === 'object' ? it !== null : typeof it === 'function';\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_is-object.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_library.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_library.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = true;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_library.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-assign.js":
+/*!*****************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-assign.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n// 19.1.2.1 Object.assign(target, source, ...)\nvar getKeys = __webpack_require__(/*! ./_object-keys */ \"../node_modules/core-js/library/modules/_object-keys.js\");\nvar gOPS = __webpack_require__(/*! ./_object-gops */ \"../node_modules/core-js/library/modules/_object-gops.js\");\nvar pIE = __webpack_require__(/*! ./_object-pie */ \"../node_modules/core-js/library/modules/_object-pie.js\");\nvar toObject = __webpack_require__(/*! ./_to-object */ \"../node_modules/core-js/library/modules/_to-object.js\");\nvar IObject = __webpack_require__(/*! ./_iobject */ \"../node_modules/core-js/library/modules/_iobject.js\");\nvar $assign = Object.assign;\n\n// should work with symbols and should have deterministic property order (V8 bug)\nmodule.exports = !$assign || __webpack_require__(/*! ./_fails */ \"../node_modules/core-js/library/modules/_fails.js\")(function () {\n  var A = {};\n  var B = {};\n  // eslint-disable-next-line no-undef\n  var S = Symbol();\n  var K = 'abcdefghijklmnopqrst';\n  A[S] = 7;\n  K.split('').forEach(function (k) { B[k] = k; });\n  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;\n}) ? function assign(target, source) { // eslint-disable-line no-unused-vars\n  var T = toObject(target);\n  var aLen = arguments.length;\n  var index = 1;\n  var getSymbols = gOPS.f;\n  var isEnum = pIE.f;\n  while (aLen > index) {\n    var S = IObject(arguments[index++]);\n    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);\n    var length = keys.length;\n    var j = 0;\n    var key;\n    while (length > j) if (isEnum.call(S, key = keys[j++])) T[key] = S[key];\n  } return T;\n} : $assign;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-assign.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-dp.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-dp.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var anObject = __webpack_require__(/*! ./_an-object */ \"../node_modules/core-js/library/modules/_an-object.js\");\nvar IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ \"../node_modules/core-js/library/modules/_ie8-dom-define.js\");\nvar toPrimitive = __webpack_require__(/*! ./_to-primitive */ \"../node_modules/core-js/library/modules/_to-primitive.js\");\nvar dP = Object.defineProperty;\n\nexports.f = __webpack_require__(/*! ./_descriptors */ \"../node_modules/core-js/library/modules/_descriptors.js\") ? Object.defineProperty : function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPrimitive(P, true);\n  anObject(Attributes);\n  if (IE8_DOM_DEFINE) try {\n    return dP(O, P, Attributes);\n  } catch (e) { /* empty */ }\n  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');\n  if ('value' in Attributes) O[P] = Attributes.value;\n  return O;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-dp.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-gops.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-gops.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("exports.f = Object.getOwnPropertySymbols;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-gops.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-keys-internal.js":
+/*!************************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-keys-internal.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var has = __webpack_require__(/*! ./_has */ \"../node_modules/core-js/library/modules/_has.js\");\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"../node_modules/core-js/library/modules/_to-iobject.js\");\nvar arrayIndexOf = __webpack_require__(/*! ./_array-includes */ \"../node_modules/core-js/library/modules/_array-includes.js\")(false);\nvar IE_PROTO = __webpack_require__(/*! ./_shared-key */ \"../node_modules/core-js/library/modules/_shared-key.js\")('IE_PROTO');\n\nmodule.exports = function (object, names) {\n  var O = toIObject(object);\n  var i = 0;\n  var result = [];\n  var key;\n  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);\n  // Don't enum bug & hidden keys\n  while (names.length > i) if (has(O, key = names[i++])) {\n    ~arrayIndexOf(result, key) || result.push(key);\n  }\n  return result;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-keys-internal.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-keys.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-keys.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 19.1.2.14 / 15.2.3.14 Object.keys(O)\nvar $keys = __webpack_require__(/*! ./_object-keys-internal */ \"../node_modules/core-js/library/modules/_object-keys-internal.js\");\nvar enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ \"../node_modules/core-js/library/modules/_enum-bug-keys.js\");\n\nmodule.exports = Object.keys || function keys(O) {\n  return $keys(O, enumBugKeys);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-keys.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-pie.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-pie.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("exports.f = {}.propertyIsEnumerable;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-pie.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_property-desc.js":
+/*!*****************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_property-desc.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function (bitmap, value) {\n  return {\n    enumerable: !(bitmap & 1),\n    configurable: !(bitmap & 2),\n    writable: !(bitmap & 4),\n    value: value\n  };\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_property-desc.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_shared-key.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_shared-key.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var shared = __webpack_require__(/*! ./_shared */ \"../node_modules/core-js/library/modules/_shared.js\")('keys');\nvar uid = __webpack_require__(/*! ./_uid */ \"../node_modules/core-js/library/modules/_uid.js\");\nmodule.exports = function (key) {\n  return shared[key] || (shared[key] = uid(key));\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_shared-key.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_shared.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_shared.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var core = __webpack_require__(/*! ./_core */ \"../node_modules/core-js/library/modules/_core.js\");\nvar global = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\");\nvar SHARED = '__core-js_shared__';\nvar store = global[SHARED] || (global[SHARED] = {});\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: core.version,\n  mode: __webpack_require__(/*! ./_library */ \"../node_modules/core-js/library/modules/_library.js\") ? 'pure' : 'global',\n  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'\n});\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_shared.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_to-absolute-index.js":
+/*!*********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_to-absolute-index.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var toInteger = __webpack_require__(/*! ./_to-integer */ \"../node_modules/core-js/library/modules/_to-integer.js\");\nvar max = Math.max;\nvar min = Math.min;\nmodule.exports = function (index, length) {\n  index = toInteger(index);\n  return index < 0 ? max(index + length, 0) : min(index, length);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_to-absolute-index.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_to-integer.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_to-integer.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// 7.1.4 ToInteger\nvar ceil = Math.ceil;\nvar floor = Math.floor;\nmodule.exports = function (it) {\n  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_to-integer.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_to-iobject.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_to-iobject.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// to indexed object, toObject with fallback for non-array-like ES3 strings\nvar IObject = __webpack_require__(/*! ./_iobject */ \"../node_modules/core-js/library/modules/_iobject.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"../node_modules/core-js/library/modules/_defined.js\");\nmodule.exports = function (it) {\n  return IObject(defined(it));\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_to-iobject.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_to-length.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_to-length.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 7.1.15 ToLength\nvar toInteger = __webpack_require__(/*! ./_to-integer */ \"../node_modules/core-js/library/modules/_to-integer.js\");\nvar min = Math.min;\nmodule.exports = function (it) {\n  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_to-length.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_to-object.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_to-object.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 7.1.13 ToObject(argument)\nvar defined = __webpack_require__(/*! ./_defined */ \"../node_modules/core-js/library/modules/_defined.js\");\nmodule.exports = function (it) {\n  return Object(defined(it));\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_to-object.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_to-primitive.js":
+/*!****************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_to-primitive.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 7.1.1 ToPrimitive(input [, PreferredType])\nvar isObject = __webpack_require__(/*! ./_is-object */ \"../node_modules/core-js/library/modules/_is-object.js\");\n// instead of the ES6 spec version, we didn't implement @@toPrimitive case\n// and the second argument - flag - preferred type is a string\nmodule.exports = function (it, S) {\n  if (!isObject(it)) return it;\n  var fn, val;\n  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;\n  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;\n  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;\n  throw TypeError(\"Can't convert object to primitive value\");\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_to-primitive.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_uid.js":
+/*!*******************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_uid.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var id = 0;\nvar px = Math.random();\nmodule.exports = function (key) {\n  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_uid.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es6.object.assign.js":
+/*!********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es6.object.assign.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 19.1.3.1 Object.assign(target, source)\nvar $export = __webpack_require__(/*! ./_export */ \"../node_modules/core-js/library/modules/_export.js\");\n\n$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ \"../node_modules/core-js/library/modules/_object-assign.js\") });\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/es6.object.assign.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es6.object.define-property.js":
+/*!*****************************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es6.object.define-property.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $export = __webpack_require__(/*! ./_export */ \"../node_modules/core-js/library/modules/_export.js\");\n// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)\n$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ \"../node_modules/core-js/library/modules/_descriptors.js\"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ \"../node_modules/core-js/library/modules/_object-dp.js\").f });\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/es6.object.define-property.js?");
 
 /***/ }),
 
@@ -136,19 +636,43 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"application\" }, [\n    _c(\"div\", { staticClass: \"container app-content\" }, [_c(\"copyright\")], 1)\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"application\" }, [\n    _c(\n      \"div\",\n      { staticClass: \"container app-content\" },\n      [_c(\"menu-list\"), _vm._v(\" \"), _c(\"copyright-icons\")],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
-/***/ "../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright.vue?vue&type=template&id=3effdf6b":
+/***/ "../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright-icons.vue?vue&type=template&id=771dcdb8":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options!./view/copyright-icons.vue?vue&type=template&id=771dcdb8 ***!
+  \************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"div\", { staticClass: \"copyright-icons\" }, [\n      _c(\"div\", [\n        _vm._v(\"\\n        Icons made by \"),\n        _c(\n          \"a\",\n          { attrs: { href: \"http://www.freepik.com\", title: \"Freepik\" } },\n          [_vm._v(\"Freepik\")]\n        ),\n        _vm._v(\" from\\n        \"),\n        _c(\n          \"a\",\n          { attrs: { href: \"https://www.flaticon.com/\", title: \"Flaticon\" } },\n          [_vm._v(\"www.flaticon.com\")]\n        ),\n        _vm._v(\" is licensed by\\n        \"),\n        _c(\n          \"a\",\n          {\n            attrs: {\n              href: \"http://creativecommons.org/licenses/by/3.0/\",\n              title: \"Creative Commons BY 3.0\",\n              target: \"_blank\"\n            }\n          },\n          [_vm._v(\"CC 3.0 BY\")]\n        )\n      ])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list-item.vue?vue&type=template&id=3a9e4780":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options!./view/menu-list-item.vue?vue&type=template&id=3a9e4780 ***!
+  \***********************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"menu-list-item\" }, [\n    _c(\"div\", {\n      staticClass: \"menu-list-item__icon\",\n      domProps: { innerHTML: _vm._s(_vm.iconAsset) }\n    }),\n    _vm._v(\" \"),\n    _c(\"div\", { staticClass: \"menu-list-item__label\" }, [\n      _vm._v(_vm._s(_vm.label))\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/menu-list-item.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list.vue?vue&type=template&id=0601e170":
 /*!******************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options!./view/copyright.vue?vue&type=template&id=3effdf6b ***!
+  !*** ../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options!./view/menu-list.vue?vue&type=template&id=0601e170 ***!
   \******************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"div\", { staticClass: \"copyright\" }, [\n      _c(\"div\", [\n        _vm._v(\"\\n        Icons made by \"),\n        _c(\n          \"a\",\n          { attrs: { href: \"http://www.freepik.com\", title: \"Freepik\" } },\n          [_vm._v(\"Freepik\")]\n        ),\n        _vm._v(\" from\\n        \"),\n        _c(\n          \"a\",\n          { attrs: { href: \"https://www.flaticon.com/\", title: \"Flaticon\" } },\n          [_vm._v(\"www.flaticon.com\")]\n        ),\n        _vm._v(\" is licensed by\\n        \"),\n        _c(\n          \"a\",\n          {\n            attrs: {\n              href: \"http://creativecommons.org/licenses/by/3.0/\",\n              title: \"Creative Commons BY 3.0\",\n              target: \"_blank\"\n            }\n          },\n          [_vm._v(\"CC 3.0 BY\")]\n        )\n      ])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/copyright.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    { staticClass: \"menu-list\" },\n    _vm._l(_vm.items, function(item) {\n      return _c(\"menu-list-item\", {\n        key: item.id,\n        attrs: { icon: item.asset, label: item.label }\n      })\n    })\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/menu-list.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -176,6 +700,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
+/***/ "../node_modules/vuex/dist/vuex.esm.js":
+/*!*********************************************!*\
+  !*** ../node_modules/vuex/dist/vuex.esm.js ***!
+  \*********************************************/
+/*! exports provided: Store, install, mapState, mapMutations, mapGetters, mapActions, createNamespacedHelpers, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Store\", function() { return Store; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"install\", function() { return install; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mapState\", function() { return mapState; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mapMutations\", function() { return mapMutations; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mapGetters\", function() { return mapGetters; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mapActions\", function() { return mapActions; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"createNamespacedHelpers\", function() { return createNamespacedHelpers; });\n/**\n * vuex v3.0.1\n * (c) 2017 Evan You\n * @license MIT\n */\nvar applyMixin = function (Vue) {\n  var version = Number(Vue.version.split('.')[0]);\n\n  if (version >= 2) {\n    Vue.mixin({ beforeCreate: vuexInit });\n  } else {\n    // override init and inject vuex init procedure\n    // for 1.x backwards compatibility.\n    var _init = Vue.prototype._init;\n    Vue.prototype._init = function (options) {\n      if ( options === void 0 ) options = {};\n\n      options.init = options.init\n        ? [vuexInit].concat(options.init)\n        : vuexInit;\n      _init.call(this, options);\n    };\n  }\n\n  /**\n   * Vuex init hook, injected into each instances init hooks list.\n   */\n\n  function vuexInit () {\n    var options = this.$options;\n    // store injection\n    if (options.store) {\n      this.$store = typeof options.store === 'function'\n        ? options.store()\n        : options.store;\n    } else if (options.parent && options.parent.$store) {\n      this.$store = options.parent.$store;\n    }\n  }\n};\n\nvar devtoolHook =\n  typeof window !== 'undefined' &&\n  window.__VUE_DEVTOOLS_GLOBAL_HOOK__;\n\nfunction devtoolPlugin (store) {\n  if (!devtoolHook) { return }\n\n  store._devtoolHook = devtoolHook;\n\n  devtoolHook.emit('vuex:init', store);\n\n  devtoolHook.on('vuex:travel-to-state', function (targetState) {\n    store.replaceState(targetState);\n  });\n\n  store.subscribe(function (mutation, state) {\n    devtoolHook.emit('vuex:mutation', mutation, state);\n  });\n}\n\n/**\n * Get the first item that pass the test\n * by second argument function\n *\n * @param {Array} list\n * @param {Function} f\n * @return {*}\n */\n/**\n * Deep copy the given object considering circular structure.\n * This function caches all nested objects and its copies.\n * If it detects circular structure, use cached copy to avoid infinite loop.\n *\n * @param {*} obj\n * @param {Array<Object>} cache\n * @return {*}\n */\n\n\n/**\n * forEach for object\n */\nfunction forEachValue (obj, fn) {\n  Object.keys(obj).forEach(function (key) { return fn(obj[key], key); });\n}\n\nfunction isObject (obj) {\n  return obj !== null && typeof obj === 'object'\n}\n\nfunction isPromise (val) {\n  return val && typeof val.then === 'function'\n}\n\nfunction assert (condition, msg) {\n  if (!condition) { throw new Error((\"[vuex] \" + msg)) }\n}\n\nvar Module = function Module (rawModule, runtime) {\n  this.runtime = runtime;\n  this._children = Object.create(null);\n  this._rawModule = rawModule;\n  var rawState = rawModule.state;\n  this.state = (typeof rawState === 'function' ? rawState() : rawState) || {};\n};\n\nvar prototypeAccessors$1 = { namespaced: { configurable: true } };\n\nprototypeAccessors$1.namespaced.get = function () {\n  return !!this._rawModule.namespaced\n};\n\nModule.prototype.addChild = function addChild (key, module) {\n  this._children[key] = module;\n};\n\nModule.prototype.removeChild = function removeChild (key) {\n  delete this._children[key];\n};\n\nModule.prototype.getChild = function getChild (key) {\n  return this._children[key]\n};\n\nModule.prototype.update = function update (rawModule) {\n  this._rawModule.namespaced = rawModule.namespaced;\n  if (rawModule.actions) {\n    this._rawModule.actions = rawModule.actions;\n  }\n  if (rawModule.mutations) {\n    this._rawModule.mutations = rawModule.mutations;\n  }\n  if (rawModule.getters) {\n    this._rawModule.getters = rawModule.getters;\n  }\n};\n\nModule.prototype.forEachChild = function forEachChild (fn) {\n  forEachValue(this._children, fn);\n};\n\nModule.prototype.forEachGetter = function forEachGetter (fn) {\n  if (this._rawModule.getters) {\n    forEachValue(this._rawModule.getters, fn);\n  }\n};\n\nModule.prototype.forEachAction = function forEachAction (fn) {\n  if (this._rawModule.actions) {\n    forEachValue(this._rawModule.actions, fn);\n  }\n};\n\nModule.prototype.forEachMutation = function forEachMutation (fn) {\n  if (this._rawModule.mutations) {\n    forEachValue(this._rawModule.mutations, fn);\n  }\n};\n\nObject.defineProperties( Module.prototype, prototypeAccessors$1 );\n\nvar ModuleCollection = function ModuleCollection (rawRootModule) {\n  // register root module (Vuex.Store options)\n  this.register([], rawRootModule, false);\n};\n\nModuleCollection.prototype.get = function get (path) {\n  return path.reduce(function (module, key) {\n    return module.getChild(key)\n  }, this.root)\n};\n\nModuleCollection.prototype.getNamespace = function getNamespace (path) {\n  var module = this.root;\n  return path.reduce(function (namespace, key) {\n    module = module.getChild(key);\n    return namespace + (module.namespaced ? key + '/' : '')\n  }, '')\n};\n\nModuleCollection.prototype.update = function update$1 (rawRootModule) {\n  update([], this.root, rawRootModule);\n};\n\nModuleCollection.prototype.register = function register (path, rawModule, runtime) {\n    var this$1 = this;\n    if ( runtime === void 0 ) runtime = true;\n\n  if (true) {\n    assertRawModule(path, rawModule);\n  }\n\n  var newModule = new Module(rawModule, runtime);\n  if (path.length === 0) {\n    this.root = newModule;\n  } else {\n    var parent = this.get(path.slice(0, -1));\n    parent.addChild(path[path.length - 1], newModule);\n  }\n\n  // register nested modules\n  if (rawModule.modules) {\n    forEachValue(rawModule.modules, function (rawChildModule, key) {\n      this$1.register(path.concat(key), rawChildModule, runtime);\n    });\n  }\n};\n\nModuleCollection.prototype.unregister = function unregister (path) {\n  var parent = this.get(path.slice(0, -1));\n  var key = path[path.length - 1];\n  if (!parent.getChild(key).runtime) { return }\n\n  parent.removeChild(key);\n};\n\nfunction update (path, targetModule, newModule) {\n  if (true) {\n    assertRawModule(path, newModule);\n  }\n\n  // update target module\n  targetModule.update(newModule);\n\n  // update nested modules\n  if (newModule.modules) {\n    for (var key in newModule.modules) {\n      if (!targetModule.getChild(key)) {\n        if (true) {\n          console.warn(\n            \"[vuex] trying to add a new module '\" + key + \"' on hot reloading, \" +\n            'manual reload is needed'\n          );\n        }\n        return\n      }\n      update(\n        path.concat(key),\n        targetModule.getChild(key),\n        newModule.modules[key]\n      );\n    }\n  }\n}\n\nvar functionAssert = {\n  assert: function (value) { return typeof value === 'function'; },\n  expected: 'function'\n};\n\nvar objectAssert = {\n  assert: function (value) { return typeof value === 'function' ||\n    (typeof value === 'object' && typeof value.handler === 'function'); },\n  expected: 'function or object with \"handler\" function'\n};\n\nvar assertTypes = {\n  getters: functionAssert,\n  mutations: functionAssert,\n  actions: objectAssert\n};\n\nfunction assertRawModule (path, rawModule) {\n  Object.keys(assertTypes).forEach(function (key) {\n    if (!rawModule[key]) { return }\n\n    var assertOptions = assertTypes[key];\n\n    forEachValue(rawModule[key], function (value, type) {\n      assert(\n        assertOptions.assert(value),\n        makeAssertionMessage(path, key, type, value, assertOptions.expected)\n      );\n    });\n  });\n}\n\nfunction makeAssertionMessage (path, key, type, value, expected) {\n  var buf = key + \" should be \" + expected + \" but \\\"\" + key + \".\" + type + \"\\\"\";\n  if (path.length > 0) {\n    buf += \" in module \\\"\" + (path.join('.')) + \"\\\"\";\n  }\n  buf += \" is \" + (JSON.stringify(value)) + \".\";\n  return buf\n}\n\nvar Vue; // bind on install\n\nvar Store = function Store (options) {\n  var this$1 = this;\n  if ( options === void 0 ) options = {};\n\n  // Auto install if it is not done yet and `window` has `Vue`.\n  // To allow users to avoid auto-installation in some cases,\n  // this code should be placed here. See #731\n  if (!Vue && typeof window !== 'undefined' && window.Vue) {\n    install(window.Vue);\n  }\n\n  if (true) {\n    assert(Vue, \"must call Vue.use(Vuex) before creating a store instance.\");\n    assert(typeof Promise !== 'undefined', \"vuex requires a Promise polyfill in this browser.\");\n    assert(this instanceof Store, \"Store must be called with the new operator.\");\n  }\n\n  var plugins = options.plugins; if ( plugins === void 0 ) plugins = [];\n  var strict = options.strict; if ( strict === void 0 ) strict = false;\n\n  var state = options.state; if ( state === void 0 ) state = {};\n  if (typeof state === 'function') {\n    state = state() || {};\n  }\n\n  // store internal state\n  this._committing = false;\n  this._actions = Object.create(null);\n  this._actionSubscribers = [];\n  this._mutations = Object.create(null);\n  this._wrappedGetters = Object.create(null);\n  this._modules = new ModuleCollection(options);\n  this._modulesNamespaceMap = Object.create(null);\n  this._subscribers = [];\n  this._watcherVM = new Vue();\n\n  // bind commit and dispatch to self\n  var store = this;\n  var ref = this;\n  var dispatch = ref.dispatch;\n  var commit = ref.commit;\n  this.dispatch = function boundDispatch (type, payload) {\n    return dispatch.call(store, type, payload)\n  };\n  this.commit = function boundCommit (type, payload, options) {\n    return commit.call(store, type, payload, options)\n  };\n\n  // strict mode\n  this.strict = strict;\n\n  // init root module.\n  // this also recursively registers all sub-modules\n  // and collects all module getters inside this._wrappedGetters\n  installModule(this, state, [], this._modules.root);\n\n  // initialize the store vm, which is responsible for the reactivity\n  // (also registers _wrappedGetters as computed properties)\n  resetStoreVM(this, state);\n\n  // apply plugins\n  plugins.forEach(function (plugin) { return plugin(this$1); });\n\n  if (Vue.config.devtools) {\n    devtoolPlugin(this);\n  }\n};\n\nvar prototypeAccessors = { state: { configurable: true } };\n\nprototypeAccessors.state.get = function () {\n  return this._vm._data.$$state\n};\n\nprototypeAccessors.state.set = function (v) {\n  if (true) {\n    assert(false, \"Use store.replaceState() to explicit replace store state.\");\n  }\n};\n\nStore.prototype.commit = function commit (_type, _payload, _options) {\n    var this$1 = this;\n\n  // check object-style commit\n  var ref = unifyObjectStyle(_type, _payload, _options);\n    var type = ref.type;\n    var payload = ref.payload;\n    var options = ref.options;\n\n  var mutation = { type: type, payload: payload };\n  var entry = this._mutations[type];\n  if (!entry) {\n    if (true) {\n      console.error((\"[vuex] unknown mutation type: \" + type));\n    }\n    return\n  }\n  this._withCommit(function () {\n    entry.forEach(function commitIterator (handler) {\n      handler(payload);\n    });\n  });\n  this._subscribers.forEach(function (sub) { return sub(mutation, this$1.state); });\n\n  if (\n    \"development\" !== 'production' &&\n    options && options.silent\n  ) {\n    console.warn(\n      \"[vuex] mutation type: \" + type + \". Silent option has been removed. \" +\n      'Use the filter functionality in the vue-devtools'\n    );\n  }\n};\n\nStore.prototype.dispatch = function dispatch (_type, _payload) {\n    var this$1 = this;\n\n  // check object-style dispatch\n  var ref = unifyObjectStyle(_type, _payload);\n    var type = ref.type;\n    var payload = ref.payload;\n\n  var action = { type: type, payload: payload };\n  var entry = this._actions[type];\n  if (!entry) {\n    if (true) {\n      console.error((\"[vuex] unknown action type: \" + type));\n    }\n    return\n  }\n\n  this._actionSubscribers.forEach(function (sub) { return sub(action, this$1.state); });\n\n  return entry.length > 1\n    ? Promise.all(entry.map(function (handler) { return handler(payload); }))\n    : entry[0](payload)\n};\n\nStore.prototype.subscribe = function subscribe (fn) {\n  return genericSubscribe(fn, this._subscribers)\n};\n\nStore.prototype.subscribeAction = function subscribeAction (fn) {\n  return genericSubscribe(fn, this._actionSubscribers)\n};\n\nStore.prototype.watch = function watch (getter, cb, options) {\n    var this$1 = this;\n\n  if (true) {\n    assert(typeof getter === 'function', \"store.watch only accepts a function.\");\n  }\n  return this._watcherVM.$watch(function () { return getter(this$1.state, this$1.getters); }, cb, options)\n};\n\nStore.prototype.replaceState = function replaceState (state) {\n    var this$1 = this;\n\n  this._withCommit(function () {\n    this$1._vm._data.$$state = state;\n  });\n};\n\nStore.prototype.registerModule = function registerModule (path, rawModule, options) {\n    if ( options === void 0 ) options = {};\n\n  if (typeof path === 'string') { path = [path]; }\n\n  if (true) {\n    assert(Array.isArray(path), \"module path must be a string or an Array.\");\n    assert(path.length > 0, 'cannot register the root module by using registerModule.');\n  }\n\n  this._modules.register(path, rawModule);\n  installModule(this, this.state, path, this._modules.get(path), options.preserveState);\n  // reset store to update getters...\n  resetStoreVM(this, this.state);\n};\n\nStore.prototype.unregisterModule = function unregisterModule (path) {\n    var this$1 = this;\n\n  if (typeof path === 'string') { path = [path]; }\n\n  if (true) {\n    assert(Array.isArray(path), \"module path must be a string or an Array.\");\n  }\n\n  this._modules.unregister(path);\n  this._withCommit(function () {\n    var parentState = getNestedState(this$1.state, path.slice(0, -1));\n    Vue.delete(parentState, path[path.length - 1]);\n  });\n  resetStore(this);\n};\n\nStore.prototype.hotUpdate = function hotUpdate (newOptions) {\n  this._modules.update(newOptions);\n  resetStore(this, true);\n};\n\nStore.prototype._withCommit = function _withCommit (fn) {\n  var committing = this._committing;\n  this._committing = true;\n  fn();\n  this._committing = committing;\n};\n\nObject.defineProperties( Store.prototype, prototypeAccessors );\n\nfunction genericSubscribe (fn, subs) {\n  if (subs.indexOf(fn) < 0) {\n    subs.push(fn);\n  }\n  return function () {\n    var i = subs.indexOf(fn);\n    if (i > -1) {\n      subs.splice(i, 1);\n    }\n  }\n}\n\nfunction resetStore (store, hot) {\n  store._actions = Object.create(null);\n  store._mutations = Object.create(null);\n  store._wrappedGetters = Object.create(null);\n  store._modulesNamespaceMap = Object.create(null);\n  var state = store.state;\n  // init all modules\n  installModule(store, state, [], store._modules.root, true);\n  // reset vm\n  resetStoreVM(store, state, hot);\n}\n\nfunction resetStoreVM (store, state, hot) {\n  var oldVm = store._vm;\n\n  // bind store public getters\n  store.getters = {};\n  var wrappedGetters = store._wrappedGetters;\n  var computed = {};\n  forEachValue(wrappedGetters, function (fn, key) {\n    // use computed to leverage its lazy-caching mechanism\n    computed[key] = function () { return fn(store); };\n    Object.defineProperty(store.getters, key, {\n      get: function () { return store._vm[key]; },\n      enumerable: true // for local getters\n    });\n  });\n\n  // use a Vue instance to store the state tree\n  // suppress warnings just in case the user has added\n  // some funky global mixins\n  var silent = Vue.config.silent;\n  Vue.config.silent = true;\n  store._vm = new Vue({\n    data: {\n      $$state: state\n    },\n    computed: computed\n  });\n  Vue.config.silent = silent;\n\n  // enable strict mode for new vm\n  if (store.strict) {\n    enableStrictMode(store);\n  }\n\n  if (oldVm) {\n    if (hot) {\n      // dispatch changes in all subscribed watchers\n      // to force getter re-evaluation for hot reloading.\n      store._withCommit(function () {\n        oldVm._data.$$state = null;\n      });\n    }\n    Vue.nextTick(function () { return oldVm.$destroy(); });\n  }\n}\n\nfunction installModule (store, rootState, path, module, hot) {\n  var isRoot = !path.length;\n  var namespace = store._modules.getNamespace(path);\n\n  // register in namespace map\n  if (module.namespaced) {\n    store._modulesNamespaceMap[namespace] = module;\n  }\n\n  // set state\n  if (!isRoot && !hot) {\n    var parentState = getNestedState(rootState, path.slice(0, -1));\n    var moduleName = path[path.length - 1];\n    store._withCommit(function () {\n      Vue.set(parentState, moduleName, module.state);\n    });\n  }\n\n  var local = module.context = makeLocalContext(store, namespace, path);\n\n  module.forEachMutation(function (mutation, key) {\n    var namespacedType = namespace + key;\n    registerMutation(store, namespacedType, mutation, local);\n  });\n\n  module.forEachAction(function (action, key) {\n    var type = action.root ? key : namespace + key;\n    var handler = action.handler || action;\n    registerAction(store, type, handler, local);\n  });\n\n  module.forEachGetter(function (getter, key) {\n    var namespacedType = namespace + key;\n    registerGetter(store, namespacedType, getter, local);\n  });\n\n  module.forEachChild(function (child, key) {\n    installModule(store, rootState, path.concat(key), child, hot);\n  });\n}\n\n/**\n * make localized dispatch, commit, getters and state\n * if there is no namespace, just use root ones\n */\nfunction makeLocalContext (store, namespace, path) {\n  var noNamespace = namespace === '';\n\n  var local = {\n    dispatch: noNamespace ? store.dispatch : function (_type, _payload, _options) {\n      var args = unifyObjectStyle(_type, _payload, _options);\n      var payload = args.payload;\n      var options = args.options;\n      var type = args.type;\n\n      if (!options || !options.root) {\n        type = namespace + type;\n        if (\"development\" !== 'production' && !store._actions[type]) {\n          console.error((\"[vuex] unknown local action type: \" + (args.type) + \", global type: \" + type));\n          return\n        }\n      }\n\n      return store.dispatch(type, payload)\n    },\n\n    commit: noNamespace ? store.commit : function (_type, _payload, _options) {\n      var args = unifyObjectStyle(_type, _payload, _options);\n      var payload = args.payload;\n      var options = args.options;\n      var type = args.type;\n\n      if (!options || !options.root) {\n        type = namespace + type;\n        if (\"development\" !== 'production' && !store._mutations[type]) {\n          console.error((\"[vuex] unknown local mutation type: \" + (args.type) + \", global type: \" + type));\n          return\n        }\n      }\n\n      store.commit(type, payload, options);\n    }\n  };\n\n  // getters and state object must be gotten lazily\n  // because they will be changed by vm update\n  Object.defineProperties(local, {\n    getters: {\n      get: noNamespace\n        ? function () { return store.getters; }\n        : function () { return makeLocalGetters(store, namespace); }\n    },\n    state: {\n      get: function () { return getNestedState(store.state, path); }\n    }\n  });\n\n  return local\n}\n\nfunction makeLocalGetters (store, namespace) {\n  var gettersProxy = {};\n\n  var splitPos = namespace.length;\n  Object.keys(store.getters).forEach(function (type) {\n    // skip if the target getter is not match this namespace\n    if (type.slice(0, splitPos) !== namespace) { return }\n\n    // extract local getter type\n    var localType = type.slice(splitPos);\n\n    // Add a port to the getters proxy.\n    // Define as getter property because\n    // we do not want to evaluate the getters in this time.\n    Object.defineProperty(gettersProxy, localType, {\n      get: function () { return store.getters[type]; },\n      enumerable: true\n    });\n  });\n\n  return gettersProxy\n}\n\nfunction registerMutation (store, type, handler, local) {\n  var entry = store._mutations[type] || (store._mutations[type] = []);\n  entry.push(function wrappedMutationHandler (payload) {\n    handler.call(store, local.state, payload);\n  });\n}\n\nfunction registerAction (store, type, handler, local) {\n  var entry = store._actions[type] || (store._actions[type] = []);\n  entry.push(function wrappedActionHandler (payload, cb) {\n    var res = handler.call(store, {\n      dispatch: local.dispatch,\n      commit: local.commit,\n      getters: local.getters,\n      state: local.state,\n      rootGetters: store.getters,\n      rootState: store.state\n    }, payload, cb);\n    if (!isPromise(res)) {\n      res = Promise.resolve(res);\n    }\n    if (store._devtoolHook) {\n      return res.catch(function (err) {\n        store._devtoolHook.emit('vuex:error', err);\n        throw err\n      })\n    } else {\n      return res\n    }\n  });\n}\n\nfunction registerGetter (store, type, rawGetter, local) {\n  if (store._wrappedGetters[type]) {\n    if (true) {\n      console.error((\"[vuex] duplicate getter key: \" + type));\n    }\n    return\n  }\n  store._wrappedGetters[type] = function wrappedGetter (store) {\n    return rawGetter(\n      local.state, // local state\n      local.getters, // local getters\n      store.state, // root state\n      store.getters // root getters\n    )\n  };\n}\n\nfunction enableStrictMode (store) {\n  store._vm.$watch(function () { return this._data.$$state }, function () {\n    if (true) {\n      assert(store._committing, \"Do not mutate vuex store state outside mutation handlers.\");\n    }\n  }, { deep: true, sync: true });\n}\n\nfunction getNestedState (state, path) {\n  return path.length\n    ? path.reduce(function (state, key) { return state[key]; }, state)\n    : state\n}\n\nfunction unifyObjectStyle (type, payload, options) {\n  if (isObject(type) && type.type) {\n    options = payload;\n    payload = type;\n    type = type.type;\n  }\n\n  if (true) {\n    assert(typeof type === 'string', (\"Expects string as the type, but found \" + (typeof type) + \".\"));\n  }\n\n  return { type: type, payload: payload, options: options }\n}\n\nfunction install (_Vue) {\n  if (Vue && _Vue === Vue) {\n    if (true) {\n      console.error(\n        '[vuex] already installed. Vue.use(Vuex) should be called only once.'\n      );\n    }\n    return\n  }\n  Vue = _Vue;\n  applyMixin(Vue);\n}\n\nvar mapState = normalizeNamespace(function (namespace, states) {\n  var res = {};\n  normalizeMap(states).forEach(function (ref) {\n    var key = ref.key;\n    var val = ref.val;\n\n    res[key] = function mappedState () {\n      var state = this.$store.state;\n      var getters = this.$store.getters;\n      if (namespace) {\n        var module = getModuleByNamespace(this.$store, 'mapState', namespace);\n        if (!module) {\n          return\n        }\n        state = module.context.state;\n        getters = module.context.getters;\n      }\n      return typeof val === 'function'\n        ? val.call(this, state, getters)\n        : state[val]\n    };\n    // mark vuex getter for devtools\n    res[key].vuex = true;\n  });\n  return res\n});\n\nvar mapMutations = normalizeNamespace(function (namespace, mutations) {\n  var res = {};\n  normalizeMap(mutations).forEach(function (ref) {\n    var key = ref.key;\n    var val = ref.val;\n\n    res[key] = function mappedMutation () {\n      var args = [], len = arguments.length;\n      while ( len-- ) args[ len ] = arguments[ len ];\n\n      var commit = this.$store.commit;\n      if (namespace) {\n        var module = getModuleByNamespace(this.$store, 'mapMutations', namespace);\n        if (!module) {\n          return\n        }\n        commit = module.context.commit;\n      }\n      return typeof val === 'function'\n        ? val.apply(this, [commit].concat(args))\n        : commit.apply(this.$store, [val].concat(args))\n    };\n  });\n  return res\n});\n\nvar mapGetters = normalizeNamespace(function (namespace, getters) {\n  var res = {};\n  normalizeMap(getters).forEach(function (ref) {\n    var key = ref.key;\n    var val = ref.val;\n\n    val = namespace + val;\n    res[key] = function mappedGetter () {\n      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {\n        return\n      }\n      if (\"development\" !== 'production' && !(val in this.$store.getters)) {\n        console.error((\"[vuex] unknown getter: \" + val));\n        return\n      }\n      return this.$store.getters[val]\n    };\n    // mark vuex getter for devtools\n    res[key].vuex = true;\n  });\n  return res\n});\n\nvar mapActions = normalizeNamespace(function (namespace, actions) {\n  var res = {};\n  normalizeMap(actions).forEach(function (ref) {\n    var key = ref.key;\n    var val = ref.val;\n\n    res[key] = function mappedAction () {\n      var args = [], len = arguments.length;\n      while ( len-- ) args[ len ] = arguments[ len ];\n\n      var dispatch = this.$store.dispatch;\n      if (namespace) {\n        var module = getModuleByNamespace(this.$store, 'mapActions', namespace);\n        if (!module) {\n          return\n        }\n        dispatch = module.context.dispatch;\n      }\n      return typeof val === 'function'\n        ? val.apply(this, [dispatch].concat(args))\n        : dispatch.apply(this.$store, [val].concat(args))\n    };\n  });\n  return res\n});\n\nvar createNamespacedHelpers = function (namespace) { return ({\n  mapState: mapState.bind(null, namespace),\n  mapGetters: mapGetters.bind(null, namespace),\n  mapMutations: mapMutations.bind(null, namespace),\n  mapActions: mapActions.bind(null, namespace)\n}); };\n\nfunction normalizeMap (map) {\n  return Array.isArray(map)\n    ? map.map(function (key) { return ({ key: key, val: key }); })\n    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })\n}\n\nfunction normalizeNamespace (fn) {\n  return function (namespace, map) {\n    if (typeof namespace !== 'string') {\n      map = namespace;\n      namespace = '';\n    } else if (namespace.charAt(namespace.length - 1) !== '/') {\n      namespace += '/';\n    }\n    return fn(namespace, map)\n  }\n}\n\nfunction getModuleByNamespace (store, helper, namespace) {\n  var module = store._modulesNamespaceMap[namespace];\n  if (\"development\" !== 'production' && !module) {\n    console.error((\"[vuex] module namespace not found in \" + helper + \"(): \" + namespace));\n  }\n  return module\n}\n\nvar index_esm = {\n  Store: Store,\n  install: install,\n  version: '3.0.1',\n  mapState: mapState,\n  mapMutations: mapMutations,\n  mapGetters: mapGetters,\n  mapActions: mapActions,\n  createNamespacedHelpers: createNamespacedHelpers\n};\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (index_esm);\n\n\n//# sourceURL=webpack:///../node_modules/vuex/dist/vuex.esm.js?");
+
+/***/ }),
+
 /***/ "../node_modules/webpack/buildin/global.js":
 /*!*************************************************!*\
   !*** ../node_modules/webpack/buildin/global.js ***!
@@ -187,6 +723,18 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 
 /***/ }),
 
+/***/ "./controller/mutations.js":
+/*!*********************************!*\
+  !*** ./controller/mutations.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _defineProperty2 = __webpack_require__(/*! babel-runtime/helpers/defineProperty */ \"../node_modules/babel-runtime/helpers/defineProperty.js\");\n\nvar _defineProperty3 = _interopRequireDefault(_defineProperty2);\n\nvar _mutationTypes = __webpack_require__(/*! ../model/mutation-types */ \"./model/mutation-types.js\");\n\nvar MutationTypes = _interopRequireWildcard(_mutationTypes);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = (0, _defineProperty3.default)({}, MutationTypes.CHANGE_SECTION, function (state, data) {\n    state.currentItemId = data.payload;\n});\n\n//# sourceURL=webpack:///./controller/mutations.js?");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -195,7 +743,43 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _vue = __webpack_require__(/*! vue */ \"../node_modules/vue/dist/vue.runtime.esm.js\");\n\nvar _vue2 = _interopRequireDefault(_vue);\n\nvar _application = __webpack_require__(/*! ./view/application.vue */ \"./view/application.vue\");\n\nvar _application2 = _interopRequireDefault(_application);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_vue2.default.config.productionTip = false;\n\nvar vm = new _vue2.default({\n    el: '.vue-target',\n    render: function render(createElement) {\n        return createElement(_application2.default);\n    }\n});\n\n//# sourceURL=webpack:///./index.js?");
+eval("\n\nvar _vue = __webpack_require__(/*! vue */ \"../node_modules/vue/dist/vue.runtime.esm.js\");\n\nvar _vue2 = _interopRequireDefault(_vue);\n\nvar _vuex = __webpack_require__(/*! vuex */ \"../node_modules/vuex/dist/vuex.esm.js\");\n\nvar _vuex2 = _interopRequireDefault(_vuex);\n\nvar _application = __webpack_require__(/*! ./view/application.vue */ \"./view/application.vue\");\n\nvar _application2 = _interopRequireDefault(_application);\n\nvar _store = __webpack_require__(/*! ./model/store */ \"./model/store.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_vue2.default.config.productionTip = false;\n_vue2.default.use(_vuex2.default);\n\nvar vm = new _vue2.default({\n    el: '.vue-target',\n    render: function render(createElement) {\n        return createElement(_application2.default);\n    },\n    // Inject the store instance to all child components\n    store: (0, _store.createStore)((0, _store.createInitialState)())\n});\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./model/mutation-types.js":
+/*!*********************************!*\
+  !*** ./model/mutation-types.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar CHANGE_SECTION = exports.CHANGE_SECTION = 'changeSection';\n\n//# sourceURL=webpack:///./model/mutation-types.js?");
+
+/***/ }),
+
+/***/ "./model/rs.js":
+/*!*********************!*\
+  !*** ./model/rs.js ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getResource = getResource;\nvar CATEGORY_SIZE = 4;\nvar RESOURCE_SIZE = 20;\nvar CATEGORY_MASK = (1 << CATEGORY_SIZE) - 1 << RESOURCE_SIZE;\nvar RESOURCE_MASK = (1 << RESOURCE_SIZE) - 1;\n\nvar Graphic = exports.Graphic = {\n  CAPTAIN_AMERICA_ADAMANTIUM_SHIELD: 4194304,\n  DEADPOOL: 4194305,\n  GHOST_RIDER: 4194306,\n  IRON_MAN: 4194307,\n  LOKI: 4194308,\n  PUNISHER: 4194309,\n  SPIDERMAN: 4194310,\n  THOR_MJOLNIR: 4194311\n};\n\nvar data = [];\n// Graphic\ndata[4] = {\n  '0': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 454 454\" style=\"enable-background:new 0 0 454 454;\" xml:space=\"preserve\"><g><path d=\"M387.514,66.486C344.639,23.612,287.634,0,227,0S109.361,23.612,66.486,66.486C23.612,109.361,0,166.366,0,227s23.612,117.639,66.486,160.514C109.361,430.388,166.366,454,227,454s117.639-23.612,160.514-66.486C430.388,344.639,454,287.634,454,227S430.388,109.361,387.514,66.486z M227,434c-114.141,0-207-92.859-207-207S112.859,20,227,20s207,92.859,207,207S341.141,434,227,434z\"/><path d=\"M227,50.677c-97.225,0-176.323,79.099-176.323,176.323S129.775,403.323,227,403.323S403.323,324.225,403.323,227S324.225,50.677,227,50.677z M227,383.323c-86.197,0-156.323-70.126-156.323-156.323S140.803,70.677,227,70.677S383.323,140.803,383.323,227S313.197,383.323,227,383.323z\"/><path d=\"M227,101.354c-69.281,0-125.646,56.365-125.646,125.646c0,41.358,20.09,78.108,51.019,101.018c0.247,0.221,0.503,0.434,0.775,0.632c0.262,0.19,0.533,0.362,0.809,0.524c20.598,14.768,45.823,23.473,73.044,23.473c27.221,0,52.445-8.705,73.043-23.472c0.275-0.162,0.547-0.334,0.81-0.525c0.272-0.198,0.528-0.411,0.775-0.632c30.929-22.909,51.019-59.66,51.019-101.018C352.646,157.719,296.281,101.354,227,101.354z M322.225,181.264h-61.995l-19.161-58.971C276.89,127.081,307.091,149.882,322.225,181.264z M259.5,243.74l16.453,50.639l-43.075-31.296c-1.753-1.273-3.815-1.91-5.878-1.91s-4.125,0.637-5.878,1.91l-43.075,31.296L194.5,243.74c1.339-4.12-0.128-8.634-3.633-11.18l-43.076-31.297h53.245c4.332,0,8.172-2.79,9.511-6.91L227,143.715l16.453,50.639c1.339,4.12,5.179,6.91,9.511,6.91h53.245l-43.076,31.297C259.628,235.106,258.161,239.62,259.5,243.74z M212.931,122.292l-19.161,58.971h-61.995C146.909,149.882,177.11,127.081,212.931,122.292z M121.354,227c0-6.478,0.589-12.82,1.711-18.979l50.169,36.449l-19.143,58.917C133.931,284.136,121.354,257.009,121.354,227z M176.854,319.967L227,283.533l50.146,36.434c-14.928,8.084-32.01,12.68-50.146,12.68S191.782,328.051,176.854,319.967z M299.909,303.386l-19.143-58.917l50.169-36.449c1.122,6.159,1.711,12.501,1.711,18.979C332.646,257.009,320.069,284.136,299.909,303.386z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '1': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 460 460\" style=\"enable-background:new 0 0 460 460;\" xml:space=\"preserve\"><g><path d=\"M359.451,55.662c-17.117-17.733-37.112-31.591-59.429-41.19C277.693,4.869,254.135,0,230,0s-47.693,4.869-70.022,14.472c-22.317,9.599-42.312,23.457-59.429,41.19c-36.414,37.725-56.467,90.479-56.467,148.542c0,59.534,20.215,122.632,55.463,173.117C136.229,429.865,183.778,460,230,460s93.771-30.135,130.456-82.678c35.248-50.485,55.463-113.583,55.463-173.117C415.918,146.141,395.865,93.387,359.451,55.662z M344.057,365.873C311.166,412.981,269.594,440,230,440s-81.166-27.019-114.057-74.127C83.469,319.36,64.082,258.923,64.082,204.205C64.082,84.559,149.567,20,230,20s165.918,64.559,165.918,184.205C395.918,258.923,376.531,319.36,344.057,365.873z\"/><path d=\"M143.911,113.768c-1.831,0-3.682,0.11-5.5,0.328c-39.606,4.739-64.631,58.602-56.971,122.624c7.234,60.458,41.107,106.048,78.793,106.048c1.832,0,3.682-0.11,5.5-0.328c19.895-2.38,36.679-17.164,47.26-41.627c9.8-22.658,13.249-51.423,9.71-80.996C215.471,159.359,181.597,113.768,143.911,113.768z M194.638,292.873c-7.638,17.658-18.747,28.209-31.28,29.708c-1.033,0.124-2.084,0.186-3.124,0.186c-26.663,0-53.101-39.667-58.935-88.424c-6.117-51.123,11.966-97.096,39.488-100.389c1.033-0.124,2.083-0.186,3.124-0.186c26.663,0,53.101,39.667,58.935,88.424c0.142,1.185,0.257,2.364,0.374,3.544l-73.176-30.69c-2.956-1.241-6.329-0.987-9.067,0.68c-2.739,1.667-4.512,4.546-4.768,7.742c-1.886,23.507,11.461,45.43,33.212,54.553c6.718,2.818,13.793,4.247,21.027,4.247c12.207,0,23.923-4.097,33.397-11.452C203.021,266.289,199.909,280.687,194.638,292.873z M184.158,239.43c-4.277,1.852-8.935,2.838-13.71,2.838c-4.564,0-9.036-0.905-13.292-2.69c-8.876-3.723-15.541-10.815-18.833-19.372L184.158,239.43z\"/><path d=\"M321.588,114.096c-1.818-0.217-3.668-0.328-5.5-0.328c-37.686,0-71.56,45.591-78.793,106.048c-3.539,29.573-0.09,58.338,9.71,80.996c10.581,24.463,27.365,39.247,47.26,41.627c1.817,0.217,3.667,0.328,5.5,0.328c0.002,0,0.001,0,0.003,0c37.683,0,71.556-45.591,78.79-106.048C386.219,172.698,361.195,118.835,321.588,114.096zM358.701,234.343c-5.834,48.759-32.272,88.427-58.934,88.424c-1.042,0-2.093-0.063-3.125-0.186c-12.533-1.5-23.642-12.05-31.28-29.708c-5.271-12.187-8.383-26.584-9.207-42.057c9.474,7.355,21.19,11.452,33.397,11.452c7.234,0,14.309-1.429,21.027-4.247c21.751-9.123,35.098-31.046,33.212-54.553c-0.256-3.196-2.029-6.075-4.768-7.742c-2.739-1.667-6.111-1.92-9.067-0.68l-73.176,30.69c0.117-1.18,0.232-2.36,0.374-3.544c5.834-48.757,32.272-88.424,58.935-88.424c1.04,0,2.091,0.063,3.124,0.186C346.734,137.248,364.818,183.22,358.701,234.343z M275.842,239.43l45.834-19.223c-3.292,8.556-9.957,15.649-18.833,19.372c-4.256,1.785-8.728,2.69-13.292,2.69C284.777,242.268,280.119,241.282,275.842,239.43z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '2': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 460 460\" style=\"enable-background:new 0 0 460 460;\" xml:space=\"preserve\"><g><path d=\"M367.157,59.58c-1.572-2.43-4.12-4.06-6.985-4.469c-2.862-0.405-5.766,0.445-7.956,2.338L305.38,97.982c-10.221-19.521-33.129-58.814-68.205-94.947C235.292,1.095,232.704,0,230,0s-5.292,1.095-7.175,3.035c-35.07,36.127-57.981,75.425-68.204,94.947l-46.837-40.533c-2.189-1.895-5.095-2.747-7.956-2.338c-2.865,0.409-5.413,2.039-6.985,4.469c-1.82,2.813-44.568,70.643-44.934,222.368c-0.029,12.175,4.404,59.347,4.592,61.349c0.385,4.081,3.221,7.513,7.155,8.661l59.684,17.413l15.302,82.455c0.879,4.738,5.013,8.175,9.832,8.175h171.049c4.819,0,8.953-3.437,9.832-8.175l15.302-82.455l59.684-17.413c3.935-1.148,6.771-4.581,7.155-8.661c0.188-2.002,4.622-49.174,4.592-61.349C411.725,130.222,368.977,62.393,367.157,59.58z M388.21,334.664l-59.062,17.231c-3.623,1.057-6.343,4.064-7.031,7.775L307.209,440H152.791l-14.908-80.331c-0.688-3.711-3.408-6.718-7.031-7.775L71.79,334.664c-1.477-16.255-3.899-44.645-3.88-52.668c0.183-75.872,11.534-129.378,21.023-160.904c5.618-18.662,11.26-32.025,15.233-40.323l47.092,40.753c2.958,2.561,7.135,3.158,10.689,1.539c2.381-1.07,4.249-3.029,5.205-5.456c0.562-1.268,22.27-48.509,62.848-93.011c40.57,44.491,62.275,91.718,62.848,93.01c0.956,2.428,2.824,4.387,5.205,5.457c3.556,1.619,7.73,1.022,10.689-1.539l47.091-40.753c3.975,8.302,9.617,21.665,15.233,40.323c9.49,31.526,20.841,85.033,21.023,160.904C392.109,290.017,389.687,318.408,388.21,334.664z\"/><path d=\"M221.977,252.244c0.729-4.474-1.642-8.879-5.778-10.734l-72.366-32.452c-3.787-1.697-8.228-0.88-11.163,2.053c-10.048,10.048-12.878,23.695-7.572,36.506c7.89,19.048,30.716,31.355,58.153,31.355C210.435,278.973,220.469,261.489,221.977,252.244z M183.251,258.973c-21.85,0-35.884-9.854-39.676-19.009c-1.352-3.264-1.484-6.369-0.403-9.283l54.615,24.491C194.984,257.234,190.478,258.973,183.251,258.973z\"/><path d=\"M243.801,241.51c-4.136,1.855-6.507,6.26-5.778,10.734c1.508,9.245,11.542,26.729,38.725,26.729c27.437,0,50.264-12.308,58.153-31.355c5.307-12.811,2.476-26.458-7.572-36.506c-2.934-2.935-7.377-3.75-11.163-2.053L243.801,241.51z M316.424,239.964c-3.792,9.155-17.826,19.009-39.676,19.009c-7.227,0-11.733-1.739-14.536-3.801l54.615-24.491C317.908,233.595,317.776,236.7,316.424,239.964z\"/><path d=\"M230,126.171c-42.942,0-79.357,15.412-105.307,44.569c-31.058,34.896-45.066,87.481-38.434,144.271c0.466,3.99,3.275,7.314,7.132,8.439l58.011,16.925l13.851,74.636c0.879,4.738,5.013,8.175,9.832,8.175h109.83c4.819,0,8.953-3.437,9.832-8.175l11.618-62.607c0.001-0.007,0.003-0.015,0.004-0.022l2.228-12.007l58.011-16.925c3.857-1.125,6.666-4.449,7.132-8.439c6.633-56.791-7.375-109.375-38.434-144.271C309.357,141.583,272.942,126.171,230,126.171zM183.4,403.188l-7.944-42.805h11.258v4.14c0,5.523,4.477,10,10,10s10-4.477,10-10v-4.14H220v4.14c0,5.523,4.477,10,10,10s10-4.477,10-10v-4.14h13.285v4.14c0,5.523,4.477,10,10,10s10-4.477,10-10v-4.14h11.258l-7.944,42.805H183.4z M354.544,306.138L297.088,322.9c-3.623,1.057-6.343,4.064-7.031,7.775l-1.802,9.708h-14.97v-4.139c0-5.523-4.477-10-10-10s-10,4.477-10,10v4.139H240v-4.139c0-5.523-4.477-10-10-10s-10,4.477-10,10v4.139h-13.285v-4.139c0-5.523-4.477-10-10-10s-10,4.477-10,10v4.139h-14.97l-1.802-9.708c-0.688-3.711-3.408-6.718-7.031-7.775l-57.456-16.763c-4.227-48.563,8.08-92.779,34.177-122.101c22.047-24.771,53.295-37.865,90.367-37.865s68.32,13.094,90.367,37.865C346.464,213.358,358.771,257.574,354.544,306.138z\"/><path d=\"M217.458,280.383c-5.523,0-10,4.477-10,10v13.409c0,5.523,4.477,10,10,10s10-4.477,10-10v-13.409C227.458,284.86,222.981,280.383,217.458,280.383z\"/><path d=\"M242.542,280.383c-5.523,0-10,4.477-10,10v13.409c0,5.523,4.477,10,10,10s10-4.477,10-10v-13.409C252.542,284.86,248.065,280.383,242.542,280.383z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '3': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 467.29 467.29\" style=\"enable-background:new 0 0 467.29 467.29;\" xml:space=\"preserve\"><g><path d=\"M437.38,231.01c0.055-0.195,0.113-0.389,0.156-0.584c0.022-0.103,0.035-0.208,0.054-0.312c0.044-0.237,0.086-0.474,0.112-0.711c0.009-0.084,0.011-0.17,0.018-0.254c0.022-0.259,0.039-0.517,0.041-0.774c0-0.02,0.003-0.04,0.003-0.06c0-58.401-15.462-110.298-44.713-150.081c-26.075-35.462-63.015-60.782-104.014-71.297C271.085,2.334,252.45,0,233.645,0c-18.804,0-37.439,2.334-55.389,6.937c-0.001,0-0.002,0-0.003,0c-41,10.515-77.939,35.835-104.014,71.297c-29.252,39.783-44.713,91.68-44.713,150.081c0,0.021,0.003,0.041,0.003,0.062c0.002,0.254,0.019,0.508,0.04,0.763c0.007,0.088,0.009,0.176,0.018,0.264c0.026,0.233,0.068,0.467,0.111,0.7c0.019,0.107,0.032,0.216,0.055,0.322c0.042,0.193,0.1,0.385,0.154,0.578c0.039,0.141,0.072,0.283,0.117,0.422c0.006,0.017,0.009,0.034,0.014,0.051l76.304,228.974c1.361,4.083,5.183,6.838,9.487,6.838h195.627c0.004,0,0.009,0,0.013,0c0.003,0,0.007,0,0.01,0h39.979c4.305,0,8.126-2.755,9.487-6.838l76.304-228.974c0.006-0.017,0.009-0.034,0.014-0.051C437.309,231.289,437.342,231.149,437.38,231.01z M276.552,24.539v75.75h-85.814v-75.75C204.73,21.525,219.129,20,233.645,20C248.161,20,262.56,21.525,276.552,24.539z M170.738,30.112v80.177c0,5.523,4.477,10,10,10h105.814c5.522,0,10-4.477,10-10V30.112c57.758,20.37,119.62,81.112,121.181,193.828l-103.024,94.289c-1.876,1.717-3.027,4.084-3.221,6.62l-4.084,53.783l-14.398,4.799l-5.33-14.969c-1.419-3.984-5.191-6.645-9.421-6.645h-89.219c-4.229,0-8.001,2.661-9.42,6.645l-5.331,14.969l-14.399-4.799l-4.084-53.783c-0.192-2.536-1.344-4.903-3.22-6.62L49.557,223.939C51.117,111.224,112.98,50.482,170.738,30.112z M165.1,447.289l-3.571-47.029l15.727,5.242c5.162,1.721,10.757-1.004,12.583-6.132l6.251-17.554h75.111l6.251,17.554c1.456,4.087,5.304,6.648,9.42,6.647c1.049,0,2.115-0.166,3.163-0.516l15.726-5.242l-3.571,47.029H165.1z M61.193,261.7l74.967,68.61l4.285,56.424c0.003,0.038,0.005,0.077,0.009,0.115l4.59,60.44h-22.004L61.193,261.7z M344.251,447.289h-22.003l4.589-60.436c0.003-0.041,0.006-0.082,0.009-0.123l4.284-56.42l74.966-68.61L344.251,447.289z\"/><path d=\"M202.134,244.17c2.517,0,4.951-0.95,6.808-2.675c2.036-1.892,3.192-4.546,3.192-7.325v-35.189h43.023v35.189c0,2.779,1.156,5.433,3.192,7.325c1.856,1.726,4.29,2.675,6.807,2.675c0.243,0,0.487-0.009,0.731-0.027l78.419-5.742c5.226-0.382,9.27-4.734,9.27-9.973v-29.447h10c5.522,0,10-4.477,10-10s-4.478-10-10-10h-20h-78.419h-63.023h-78.419h-20c-5.523,0-10,4.477-10,10s4.477,10,10,10h10v29.447c0,5.239,4.044,9.591,9.27,9.973l78.419,5.742C201.647,244.162,201.891,244.17,202.134,244.17z M333.576,198.981v20.153l-58.419,4.278v-24.431H333.576z M192.133,223.412l-58.419-4.278v-20.153h58.419V223.412z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '4': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 460 460\" style=\"enable-background:new 0 0 460 460;\" xml:space=\"preserve\"><g><path d=\"M395.629,79.261c-6.186-38.147-24.26-64.763-50.893-74.944c-8.875-3.392-18.407-4.796-28.35-4.172c-3.909,0.245-7.314,2.75-8.714,6.409c-1.398,3.658-0.532,7.797,2.216,10.588c13.285,13.491,21.521,36.156,23.19,63.822c1.787,29.622-3.799,62.36-16.152,94.676c-3.258,8.523-6.919,16.79-10.927,24.758c-21.646-16.91-48.183-26.103-76-26.103c-27.817,0-54.354,9.193-76,26.103c-4.007-7.968-7.668-16.236-10.927-24.759c-12.354-32.315-17.939-65.054-16.152-94.676c1.669-27.666,9.904-50.331,23.19-63.822c2.749-2.791,3.614-6.929,2.216-10.588c-1.399-3.659-4.805-6.164-8.714-6.409c-9.94-0.625-19.475,0.78-28.35,4.172C88.631,14.498,70.557,41.114,64.371,79.261c-5.87,36.195-0.358,79.001,15.518,120.532c8.609,22.521,20.451,44.672,32.262,60.563c-3.868,12.12-5.825,24.746-5.825,37.612v122.11c0,3.987,2.368,7.593,6.027,9.177l69.108,29.922c1.273,0.551,2.625,0.823,3.972,0.823c1.923,0,3.835-0.554,5.49-1.641c2.815-1.849,4.511-4.991,4.511-8.359v-70.564c0-5.523-4.477-10-10-10H160.65v-59.367l65.453,27.691c0.006,0.003,0.012,0.004,0.018,0.007c0.043,0.018,0.089,0.031,0.132,0.048c0.003,0.001,0.005,0.002,0.008,0.003c0.133,0.054,0.268,0.099,0.402,0.147c0.196,0.069,0.391,0.136,0.59,0.193c0.07,0.02,0.138,0.043,0.208,0.061c0.112,0.03,0.225,0.052,0.338,0.078c0.216,0.049,0.433,0.087,0.651,0.121c0.089,0.014,0.175,0.037,0.264,0.049c0.065,0.008,0.13,0.013,0.196,0.02c0.288,0.031,0.576,0.046,0.865,0.053c0.072,0.002,0.143,0.013,0.215,0.013c0.003,0,0.006-0.001,0.009-0.001s0.006,0.001,0.009,0.001c0.071,0,0.142-0.011,0.212-0.013c0.29-0.006,0.58-0.021,0.869-0.053c0.064-0.007,0.129-0.012,0.193-0.02c0.088-0.011,0.173-0.034,0.26-0.048c0.221-0.035,0.441-0.073,0.659-0.122c0.112-0.025,0.224-0.048,0.335-0.078c0.068-0.018,0.135-0.04,0.203-0.06c0.202-0.058,0.401-0.125,0.6-0.196c0.132-0.047,0.263-0.091,0.394-0.144c0.009-0.003,0.017-0.006,0.026-0.009c0.038-0.015,0.077-0.026,0.114-0.042c0.007-0.003,0.014-0.005,0.021-0.008l65.453-27.691v59.367h-24.785c-5.522,0-10,4.477-10,10V450c0,5.523,4.478,10,10,10h8.751c1.541,0,3.061-0.356,4.441-1.041l60.358-29.922c3.404-1.688,5.559-5.159,5.559-8.959v-122.11c0-12.865-1.958-25.492-5.826-37.612c11.812-15.89,23.653-38.042,32.263-60.562C395.986,158.262,401.498,115.456,395.629,79.261zM154.547,285.77c-3.088-1.306-6.625-0.978-9.421,0.874c-2.795,1.852-4.476,4.982-4.476,8.335v84.456c0,5.523,4.477,10,10,10h24.785v45.337l-49.108-21.262V297.968c0-9.887,1.4-19.593,4.12-28.959l57.243,2.446l19.92,36.764L154.547,285.77zM333.674,413.874l-49.109,24.345v-48.784h24.785c5.522,0,10-4.477,10-10V294.98c0-3.353-1.681-6.483-4.476-8.335c-2.795-1.853-6.334-2.181-9.421-0.874l-53.064,22.449l19.92-36.764l57.244-2.446c2.721,9.366,4.12,19.072,4.12,28.959V413.874zM361.429,192.652c-7.961,20.825-19.231,41.911-29.979,56.258l-65.658,2.806c-3.514,0.15-6.69,2.135-8.365,5.227L230,307.559l-27.426-50.616c-1.676-3.092-4.852-5.077-8.366-5.227l-65.658-2.806c-10.749-14.347-22.018-35.433-29.979-56.258C83.934,154.364,78.8,115.231,84.113,82.462c4.894-30.177,18.037-51.055,37.075-58.978c-8.061,15.353-12.91,34.391-14.23,56.275c-1.957,32.443,4.071,68.067,17.434,103.021c5.058,13.232,11.013,25.921,17.737,37.874c0.153,0.305,0.324,0.603,0.511,0.894c1.74,3.065,3.517,6.094,5.358,9.057c2.915,4.691,9.082,6.13,13.771,3.215c4.691-2.915,6.13-9.081,3.215-13.772c-0.389-0.626-0.764-1.268-1.148-1.9c18.574-15.434,41.784-23.854,66.165-23.854c24.381,0,47.59,8.42,66.165,23.854c-0.384,0.631-0.759,1.274-1.148,1.9c-2.915,4.691-1.476,10.856,3.215,13.772c4.69,2.916,10.857,1.476,13.771-3.215c1.842-2.964,3.62-5.995,5.361-9.062c0.18-0.281,0.344-0.57,0.493-0.864c6.73-11.961,12.69-24.657,17.752-37.899c13.362-34.955,19.392-70.579,17.435-103.022c-1.32-21.884-6.17-40.922-14.23-56.275c19.037,7.924,32.181,28.801,37.074,58.978C381.2,115.231,376.065,154.364,361.429,192.652z\"/><path d=\"M259.484,217.524c-9.44-3.47-19.36-5.229-29.484-5.229c-10.128,0-20.051,1.76-29.494,5.233c-5.184,1.906-7.84,7.653-5.935,12.837c1.488,4.045,5.314,6.552,9.387,6.552c1.146,0,2.312-0.198,3.45-0.617c7.226-2.657,14.827-4.004,22.592-4.004c7.762,0,15.36,1.346,22.584,4.001c5.188,1.906,10.932-0.753,12.836-5.936C267.325,225.176,264.668,219.429,259.484,217.524z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '5': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 460 460\" style=\"enable-background:new 0 0 460 460;\" xml:space=\"preserve\"><g><path d=\"M215.971,164.494c0.729-4.474-1.642-8.879-5.778-10.734l-96.657-43.344c-3.787-1.697-8.228-0.881-11.163,2.054c-12.427,12.428-15.936,29.288-9.386,45.102c10.017,24.183,39.288,39.808,74.572,39.808C201.61,197.379,214.116,175.868,215.971,164.494z M167.56,177.379c-30.892,0-50.433-13.792-56.095-27.462c-1.945-4.697-3.042-11.259,0.954-18.084l80.429,36.067C189.247,172.383,181.994,177.379,167.56,177.379z\"/><path d=\"M368.147,58.404C334.142,20.196,286.372,0,230,0S125.858,20.196,91.853,58.404c-40.846,45.895-59.256,115.175-50.508,190.077c0.487,4.17,3.527,7.592,7.611,8.567l96.696,23.076V450c0,5.523,4.477,10,10,10h148.695c5.523,0,10-4.477,10-10V280.124l96.696-23.076c4.084-0.975,7.124-4.396,7.611-8.567C427.403,173.579,408.994,104.298,368.147,58.404z M399.519,239.236l-97.492,23.266c-4.502,1.075-7.679,5.098-7.679,9.727V440h-17.174V282.461c0-5.523-4.477-10-10-10s-10,4.477-10,10V440H240V272.457c0-5.523-4.477-10-10-10s-10,4.477-10,10V440h-17.174V282.461c0-5.523-4.477-10-10-10s-10,4.477-10,10V440h-17.174V272.229c0-4.629-3.176-8.652-7.679-9.727l-97.492-23.266C54.258,172.698,70.977,111.942,106.792,71.7C136.895,37.877,179.5,20,230,20s93.105,17.877,123.208,51.7C389.023,111.942,405.742,172.698,399.519,239.236z\"/><path d=\"M346.464,110.415l-96.657,43.344c-4.136,1.855-6.507,6.26-5.778,10.734c1.855,11.374,14.361,32.885,48.411,32.885c35.284,0,64.555-15.625,74.572-39.808c6.55-15.814,3.042-32.674-9.386-45.102C354.693,109.534,350.25,108.718,346.464,110.415zM348.535,149.917c-5.662,13.669-25.203,27.462-56.095,27.462c-14.435,0-21.687-4.996-25.288-9.479l80.429-36.067C351.577,138.658,350.48,145.22,348.535,149.917z\"/><path d=\"M219.542,189.304c-5.455-0.854-10.572,2.875-11.428,8.331l-5.002,31.917c-0.855,5.457,2.875,10.573,8.331,11.428c0.524,0.082,1.046,0.122,1.561,0.122c4.84,0,9.094-3.521,9.867-8.453l5.002-31.917C228.729,195.275,224.999,190.159,219.542,189.304z\"/><path d=\"M251.885,197.635c-0.855-5.456-5.966-9.185-11.428-8.331c-5.456,0.855-9.186,5.971-8.331,11.428l5.002,31.917c0.773,4.932,5.027,8.453,9.867,8.453c0.514,0,1.036-0.04,1.561-0.122c5.456-0.855,9.186-5.971,8.331-11.428L251.885,197.635z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '6': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 470.002 470.002\" style=\"enable-background:new 0 0 470.002 470.002;\" xml:space=\"preserve\"><path d=\"M417.092,286.115c-0.848-35.912-8.08-61.332-8.388-62.397c-0.868-3.006-3.094-5.432-6.014-6.557L299.454,177.4l78.132,7c0.302,0.027,0.602,0.04,0.899,0.04c4.445,0,8.408-2.958,9.624-7.309c0.286-1.023,7.008-25.438,7.593-58.8c0.782-44.611-9.977-84.063-31.114-114.087c-3.18-4.516-9.418-5.601-13.934-2.42c-4.516,3.179-5.6,9.417-2.42,13.934c37.406,53.133,27.265,124.255,22.452,147.943l-73.967-6.627l42.478-9.292c4.015-0.878,7.083-4.122,7.736-8.18c0.56-3.476,13.112-85.707-37.853-136.673c-3.906-3.904-10.236-3.904-14.143,0c-3.905,3.905-3.905,10.237,0,14.143c36.014,36.014,34.636,93.322,32.983,112.704L277.44,140.82c-3.106-5.283-7.987-9.402-13.823-11.524v-16.719c0-5.522-4.478-10-10-10s-10,4.478-10,10v15.133h-14.08v-15.133c0-5.522-4.478-10-10-10s-10,4.478-10,10v15.798c-7.219,1.642-13.324,6.236-16.975,12.445l-50.497-11.046c-1.687-19.364-3.138-76.565,32.998-112.701c3.905-3.905,3.905-10.237,0-14.143c-3.906-3.904-10.236-3.904-14.143,0c-50.965,50.966-38.412,133.197-37.853,136.673c0.653,4.058,3.722,7.302,7.736,8.18l42.478,9.292l-73.98,6.628C94.46,140.041,84.26,69.036,121.768,15.758c3.18-4.517,2.096-10.755-2.42-13.934c-4.517-3.18-10.754-2.095-13.934,2.42C84.277,34.269,73.518,73.72,74.3,118.331c0.585,33.362,7.307,57.776,7.593,58.8c1.216,4.352,5.179,7.309,9.624,7.309c0.298,0,0.598-0.013,0.899-0.04l78.132-7L67.312,217.161c-2.92,1.125-5.146,3.551-6.014,6.557c-0.308,1.065-7.54,26.485-8.388,62.397c-1.129,47.785,9.788,91.56,31.57,126.591c1.895,3.047,5.16,4.721,8.502,4.721c1.803,0,3.627-0.487,5.271-1.509c4.69-2.916,6.128-9.082,3.212-13.772c-24.802-39.887-29.228-84.546-28.573-114.986c0.533-24.844,4.439-44.584,6.443-53.196l100.244-38.608l-43.748,45.887c-1.453,1.523-2.388,3.466-2.671,5.551c-0.187,1.368-4.527,34.008-1.362,77.272c2.947,40.289,13.304,97.607,45.905,141.868c1.961,2.661,4.99,4.07,8.06,4.07c2.06,0,4.138-0.635,5.923-1.949c4.446-3.275,5.396-9.535,2.121-13.982c-52.154-70.807-43.29-181.502-41.188-201.454l43.062-45.167c0.64,0.714,1.315,1.396,2.027,2.037c-7.042,8.731-14.484,22.491-14.484,41.652c0,38.911,19.698,93.185,51.778,93.185s51.778-54.273,51.778-93.185c0-19.161-7.442-32.921-14.484-41.652c0.713-0.642,1.388-1.323,2.027-2.038l43.064,45.171c2.118,19.957,11.048,130.53-41.191,201.451c-3.275,4.447-2.325,10.707,2.121,13.982c1.786,1.315,3.863,1.949,5.923,1.949c3.069-0.001,6.1-1.409,8.06-4.07c32.602-44.261,42.958-101.579,45.905-141.868c3.165-43.265-1.176-75.904-1.362-77.272c-0.283-2.085-1.218-4.027-2.671-5.551l-43.748-45.887l100.242,38.607c4.666,20.124,19.634,101.02-22.128,168.184c-2.916,4.69-1.479,10.856,3.212,13.772c1.644,1.022,3.468,1.51,5.271,1.509c3.342,0,6.607-1.674,8.502-4.721C407.304,377.674,418.221,333.9,417.092,286.115z M235.001,324.324c-13.582,0-31.778-36.183-31.778-73.185c0-24.404,16.953-36.006,17.608-36.444c3.729-2.403,5.429-6.975,4.176-11.229c-1.252-4.255-5.157-7.177-9.593-7.177c-3.581,0-6.495-2.914-6.495-6.495v-35.589c0-3.581,2.914-6.495,6.495-6.495h35.793c0.773,0.191,1.578,0.305,2.41,0.305c0.699,0,1.38-0.073,2.038-0.209c3.074,0.512,5.427,3.183,5.427,6.399v35.589c0,3.581-2.914,6.495-6.495,6.495c-4.436,0-8.341,2.922-9.593,7.177c-1.253,4.255,0.447,8.826,4.176,11.229c0.176,0.113,17.608,11.634,17.608,36.444C266.779,288.141,248.583,324.324,235.001,324.324z\"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>',\n  '7': '<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg version=\"1.1\" id=\"capa_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\"viewBox=\"0 0 460.006 460.006\" style=\"enable-background:new 0 0 460.006 460.006;\" xml:space=\"preserve\"><g><path d=\"M457.078,239.227L356.926,139.076c-2.864-2.864-7.174-3.719-10.915-2.16l-45.983,19.145c-0.028,0.011-0.056,0.023-0.084,0.034l-0.032,0.014c-0.048,0.02-0.092,0.046-0.139,0.066c-0.246,0.106-0.491,0.219-0.73,0.347c-0.058,0.03-0.112,0.067-0.168,0.1c-0.226,0.126-0.451,0.256-0.668,0.401c-0.086,0.058-0.165,0.124-0.25,0.184c-0.18,0.129-0.362,0.255-0.536,0.397c-0.256,0.209-0.502,0.431-0.736,0.665l-42.549,42.549L112.638,59.318c-7.647-7.646-18.292-10.357-29.198-7.433c-2.859,0.766-5.668,1.915-8.372,3.355c-2.545-5.646-5.944-12.688-9.952-19.781C51.637,11.601,38.575,0.003,25.182,0.003c-4.401,0-10.994,1.347-17.412,7.764c-8.181,8.182-8.452,16.647-7.237,22.31c2.59,12.078,14.665,23.901,36.915,36.144c6.413,3.528,12.678,6.537,17.796,8.844c-1.441,2.704-2.59,5.513-3.356,8.372c-2.923,10.909-0.213,21.552,7.433,29.198l26.02,26.02c0.032,0.032,0.064,0.064,0.096,0.097c0.019,0.018,0.037,0.036,0.055,0.054l52.157,52.157c0.007,0.007,0.013,0.015,0.02,0.021c0.003,0.004,0.007,0.007,0.011,0.01l63.14,63.141l-42.549,42.549c-0.234,0.234-0.455,0.479-0.664,0.734c-0.156,0.19-0.296,0.39-0.437,0.588c-0.047,0.066-0.099,0.129-0.144,0.196c-0.156,0.232-0.296,0.473-0.43,0.715c-0.023,0.041-0.049,0.08-0.071,0.121c-0.133,0.248-0.25,0.503-0.361,0.759c-0.017,0.039-0.038,0.075-0.054,0.114l-0.011,0.026c-0.013,0.031-0.026,0.062-0.039,0.093l-19.143,45.979c-1.557,3.74-0.704,8.05,2.161,10.915L239.23,457.075c1.914,1.914,4.473,2.929,7.073,2.929c1.328,0,2.667-0.265,3.938-0.809l45.518-19.508c0.01-0.004,0.019-0.008,0.029-0.012l0.157-0.067c0.086-0.037,0.167-0.083,0.251-0.122c0.187-0.087,0.374-0.172,0.557-0.271c0.106-0.058,0.208-0.123,0.312-0.185c0.172-0.101,0.344-0.199,0.51-0.312c0.13-0.087,0.252-0.185,0.377-0.277c0.132-0.098,0.268-0.19,0.396-0.296c0.253-0.208,0.496-0.427,0.728-0.658l30.144-30.145l12.516,12.517c1.875,1.875,4.419,2.929,7.071,2.929s5.195-1.054,7.071-2.929l63.984-63.984c1.875-1.876,2.929-4.419,2.929-7.071s-1.054-5.196-2.929-7.071l-12.516-12.516l30.144-30.145c0.232-0.231,0.45-0.476,0.658-0.728c0.108-0.131,0.202-0.27,0.303-0.404c0.091-0.123,0.186-0.242,0.271-0.368c0.115-0.172,0.217-0.349,0.321-0.525c0.058-0.099,0.12-0.194,0.174-0.296c0.102-0.188,0.19-0.381,0.279-0.573c0.037-0.08,0.081-0.156,0.115-0.237l0.063-0.147c0.006-0.014,0.012-0.027,0.018-0.042l19.506-45.514C460.808,246.479,459.969,242.118,457.078,239.227z M20.088,25.882c-0.142-0.661-0.379-1.77,1.825-3.973c1.265-1.266,2.365-1.906,3.269-1.906c3.042,0,11.188,5.289,22.418,25.112c1.035,1.826,2.028,3.657,2.975,5.464C35.306,42.489,21.581,32.844,20.088,25.882z M79.667,104.696l-6.204-6.204c-1.66-1.66-3.7-4.49-2.256-9.879c1.01-3.771,3.455-7.6,6.59-10.744c0.042-0.042,0.085-0.081,0.126-0.123c3.136-3.111,6.943-5.537,10.693-6.542c1.288-0.345,2.428-0.491,3.442-0.491c3.231,0,5.174,1.484,6.437,2.748l6.174,6.174c-5.187,2.154-10.257,5.553-14.868,10.164C85.352,94.248,81.889,99.367,79.667,104.696z M118.572,143.6l-19.048-19.048c-6.355-6.449,0.104-16.295,4.42-20.611c3.655-3.656,8.029-6.169,11.999-6.895c4.653-0.849,7.175,1.036,8.668,2.53c0.019,0.018,0.037,0.036,0.055,0.054l6.473,6.473C122.978,117.238,118.799,130.391,118.572,143.6z M215.749,190.714l24.245,24.245l-24.245,24.245c-4.559-7.188-7.013-15.525-7.013-24.245S211.189,197.902,215.749,190.714z M153.653,178.682l-1.846-1.847c-15.268-15.271-17.35-38.797-6.273-56.336l20.713,20.714C158.282,152.046,153.891,165.022,153.653,178.682z M188.764,213.792l-1.841-1.841l-0.001-0.001c-8.575-8.574-13.297-19.976-13.297-32.103c0-8.719,2.453-17.057,7.013-24.245l20.721,20.722C193.394,187.157,189.002,200.132,188.764,213.792z M348.807,398.646l-5.445-5.445l49.841-49.841l5.445,5.444L348.807,398.646zM386.142,322.137c-0.003,0.003-0.007,0.006-0.01,0.009s-0.006,0.007-0.009,0.01l-63.964,63.965c-0.003,0.003-0.007,0.006-0.01,0.009s-0.006,0.007-0.009,0.01l-30.135,30.136l-64.748-64.749c-3.906-3.903-10.237-3.903-14.142,0c-3.905,3.905-3.906,10.237,0,14.143l61.375,61.375l-25.904,11.102l-90.63-90.63l10.878-26.128l22.083,22.083c1.953,1.952,4.512,2.929,7.071,2.929c2.559,0,5.119-0.977,7.071-2.929c3.905-3.905,3.906-10.237,0-14.143l-25.574-25.574l42.542-42.543c0.002-0.002,0.005-0.004,0.007-0.006l39.174-39.174c0.003-0.003,0.005-0.006,0.008-0.009l42.541-42.54l112.521,112.52L386.142,322.137z M427.047,274.486L321.389,168.829l26.129-10.878l90.63,90.631L427.047,274.486z\"/><path d=\"M377.535,302.463c2.794,0,5.421-1.088,7.379-3.046c1.984-1.974,3.079-4.603,3.083-7.401c0.004-2.8-1.085-5.432-3.065-7.412c-1.976-1.977-4.603-3.064-7.396-3.064c-2.795,0-5.422,1.088-7.418,3.084c-4.057,4.079-4.048,10.707,0.021,14.775C372.113,301.375,374.74,302.463,377.535,302.463z\"/><path d=\"M331.831,295.934c2.794,0,5.421-1.088,7.397-3.064c4.078-4.078,4.078-10.716-0.001-14.795c-1.976-1.976-4.603-3.063-7.396-3.063s-5.421,1.088-7.397,3.064c-4.078,4.078-4.078,10.716,0.001,14.795C326.411,294.846,329.038,295.934,331.831,295.934z\"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>'\n};\n\nfunction getResource(resourceId) {\n  var category = (resourceId & CATEGORY_MASK) >> RESOURCE_SIZE;\n  var resource = resourceId & RESOURCE_MASK;\n\n  return data[category][resource];\n}\n\n//# sourceURL=webpack:///./model/rs.js?");
+
+/***/ }),
+
+/***/ "./model/store.js":
+/*!************************!*\
+  !*** ./model/store.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _extends2 = __webpack_require__(/*! babel-runtime/helpers/extends */ \"../node_modules/babel-runtime/helpers/extends.js\");\n\nvar _extends3 = _interopRequireDefault(_extends2);\n\nexports.createInitialState = createInitialState;\nexports.createStore = createStore;\n\nvar _vuex = __webpack_require__(/*! vuex */ \"../node_modules/vuex/dist/vuex.esm.js\");\n\nvar _vuex2 = _interopRequireDefault(_vuex);\n\nvar _mutations = __webpack_require__(/*! ../controller/mutations */ \"./controller/mutations.js\");\n\nvar _mutations2 = _interopRequireDefault(_mutations);\n\nvar _rs = __webpack_require__(/*! ./rs */ \"./model/rs.js\");\n\nvar Rs = _interopRequireWildcard(_rs);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction createInitialState() {\n    return {\n        currentItemId: null,\n        menuItems: createMenuItems([{\n            asset: Rs.Graphic.CAPTAIN_AMERICA_ADAMANTIUM_SHIELD,\n            label: 'Captain America'\n        }, {\n            asset: Rs.Graphic.DEADPOOL,\n            label: 'Deadpool'\n        }, {\n            asset: Rs.Graphic.GHOST_RIDER,\n            label: 'Ghost Rider'\n        }, {\n            asset: Rs.Graphic.IRON_MAN,\n            label: 'Iron Man'\n        }, {\n            asset: Rs.Graphic.LOKI,\n            label: 'Loki'\n        }, {\n            asset: Rs.Graphic.PUNISHER,\n            label: 'Punisher'\n        }, {\n            asset: Rs.Graphic.SPIDERMAN,\n            label: 'Spider-Man'\n        }, {\n            asset: Rs.Graphic.THOR_MJOLNIR,\n            label: 'Thor'\n        }])\n    };\n}\n\nfunction createMenuItems(items) {\n    return items.map(function (item, index) {\n        return (0, _extends3.default)({}, item, { id: index + 1 });\n    });\n}\n\nfunction createStore(initialState) {\n    return new _vuex2.default.Store({\n        state: initialState,\n        mutations: _mutations2.default\n    });\n}\n\n//# sourceURL=webpack:///./model/store.js?");
 
 /***/ }),
 
@@ -235,39 +819,111 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
-/***/ "./view/copyright.vue":
+/***/ "./view/copyright-icons.vue":
+/*!**********************************!*\
+  !*** ./view/copyright-icons.vue ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./copyright-icons.vue?vue&type=template&id=771dcdb8 */ \"./view/copyright-icons.vue?vue&type=template&id=771dcdb8\");\n/* harmony import */ var _copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./copyright-icons.vue?vue&type=script&lang=js */ \"./view/copyright-icons.vue?vue&type=script&lang=js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"../node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"view/copyright-icons.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?");
+
+/***/ }),
+
+/***/ "./view/copyright-icons.vue?vue&type=script&lang=js":
+/*!**********************************************************!*\
+  !*** ./view/copyright-icons.vue?vue&type=script&lang=js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--0!../../node_modules/vue-loader/lib??vue-loader-options!./copyright-icons.vue?vue&type=script&lang=js */ \"../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright-icons.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./view/copyright-icons.vue?");
+
+/***/ }),
+
+/***/ "./view/copyright-icons.vue?vue&type=template&id=771dcdb8":
+/*!****************************************************************!*\
+  !*** ./view/copyright-icons.vue?vue&type=template&id=771dcdb8 ***!
+  \****************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./copyright-icons.vue?vue&type=template&id=771dcdb8 */ \"../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright-icons.vue?vue&type=template&id=771dcdb8\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?");
+
+/***/ }),
+
+/***/ "./view/menu-list-item.vue":
+/*!*********************************!*\
+  !*** ./view/menu-list-item.vue ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu_list_item_vue_vue_type_template_id_3a9e4780__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu-list-item.vue?vue&type=template&id=3a9e4780 */ \"./view/menu-list-item.vue?vue&type=template&id=3a9e4780\");\n/* harmony import */ var _menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-list-item.vue?vue&type=script&lang=js */ \"./view/menu-list-item.vue?vue&type=script&lang=js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"../node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _menu_list_item_vue_vue_type_template_id_3a9e4780__WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _menu_list_item_vue_vue_type_template_id_3a9e4780__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"view/menu-list-item.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./view/menu-list-item.vue?");
+
+/***/ }),
+
+/***/ "./view/menu-list-item.vue?vue&type=script&lang=js":
+/*!*********************************************************!*\
+  !*** ./view/menu-list-item.vue?vue&type=script&lang=js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--0!../../node_modules/vue-loader/lib??vue-loader-options!./menu-list-item.vue?vue&type=script&lang=js */ \"../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list-item.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./view/menu-list-item.vue?");
+
+/***/ }),
+
+/***/ "./view/menu-list-item.vue?vue&type=template&id=3a9e4780":
+/*!***************************************************************!*\
+  !*** ./view/menu-list-item.vue?vue&type=template&id=3a9e4780 ***!
+  \***************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_template_id_3a9e4780__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./menu-list-item.vue?vue&type=template&id=3a9e4780 */ \"../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list-item.vue?vue&type=template&id=3a9e4780\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_template_id_3a9e4780__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_item_vue_vue_type_template_id_3a9e4780__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./view/menu-list-item.vue?");
+
+/***/ }),
+
+/***/ "./view/menu-list.vue":
 /*!****************************!*\
-  !*** ./view/copyright.vue ***!
+  !*** ./view/menu-list.vue ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _copyright_vue_vue_type_template_id_3effdf6b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./copyright.vue?vue&type=template&id=3effdf6b */ \"./view/copyright.vue?vue&type=template&id=3effdf6b\");\n/* harmony import */ var _copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./copyright.vue?vue&type=script&lang=js */ \"./view/copyright.vue?vue&type=script&lang=js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"../node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _copyright_vue_vue_type_template_id_3effdf6b__WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _copyright_vue_vue_type_template_id_3effdf6b__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"view/copyright.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./view/copyright.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu_list_vue_vue_type_template_id_0601e170__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu-list.vue?vue&type=template&id=0601e170 */ \"./view/menu-list.vue?vue&type=template&id=0601e170\");\n/* harmony import */ var _menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-list.vue?vue&type=script&lang=js */ \"./view/menu-list.vue?vue&type=script&lang=js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"../node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _menu_list_vue_vue_type_template_id_0601e170__WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _menu_list_vue_vue_type_template_id_0601e170__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"view/menu-list.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./view/menu-list.vue?");
 
 /***/ }),
 
-/***/ "./view/copyright.vue?vue&type=script&lang=js":
+/***/ "./view/menu-list.vue?vue&type=script&lang=js":
 /*!****************************************************!*\
-  !*** ./view/copyright.vue?vue&type=script&lang=js ***!
+  !*** ./view/menu-list.vue?vue&type=script&lang=js ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--0!../../node_modules/vue-loader/lib??vue-loader-options!./copyright.vue?vue&type=script&lang=js */ \"../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./view/copyright.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--0!../../node_modules/vue-loader/lib??vue-loader-options!./menu-list.vue?vue&type=script&lang=js */ \"../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./view/menu-list.vue?");
 
 /***/ }),
 
-/***/ "./view/copyright.vue?vue&type=template&id=3effdf6b":
+/***/ "./view/menu-list.vue?vue&type=template&id=0601e170":
 /*!**********************************************************!*\
-  !*** ./view/copyright.vue?vue&type=template&id=3effdf6b ***!
+  !*** ./view/menu-list.vue?vue&type=template&id=0601e170 ***!
   \**********************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_template_id_3effdf6b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./copyright.vue?vue&type=template&id=3effdf6b */ \"../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright.vue?vue&type=template&id=3effdf6b\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_template_id_3effdf6b__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_vue_vue_type_template_id_3effdf6b__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./view/copyright.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_template_id_0601e170__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./menu-list.vue?vue&type=template&id=0601e170 */ \"../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/menu-list.vue?vue&type=template&id=0601e170\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_template_id_0601e170__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_menu_list_vue_vue_type_template_id_0601e170__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./view/menu-list.vue?");
 
 /***/ })
 

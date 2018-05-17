@@ -1,5 +1,5 @@
 <template>
-    <div class="copyright">
+    <div class="copyright-icons">
         <div>
             Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
             <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
@@ -10,6 +10,6 @@
 
 <script>
     export default {
-        name: "copyright"
+        name: 'copyright-icons'
     }
 </script>
