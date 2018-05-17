@@ -4,9 +4,11 @@
   "description": "Demonstration of Resource Sentry. Simple super hero navigation tool.",
   "main": "./src/index.js",
   "scripts": {
+    "build-style": "node-sass ./style/main.scss ./dist/style.css",
     "start": "webpack --colors --progress --watch --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-resources": "rs"
+    "watch-resources": "rs",
+    "watch-style": "npm run build-style && npm run build-style -- -w"
   },
   "private": true,
   "repository": {
@@ -37,6 +39,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "browser-sync": "^2.24.4",
     "browser-sync-webpack-plugin": "^2.2.2",
+    "node-sass": "^4.9.0",
     "vue-loader": "^15.0.11",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.8.3",
