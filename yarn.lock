@@ -13,9 +13,9 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.0.2.tgz#d056b68999769728a1cff8d643bc59eb6f0be436"
 
-"@resource-sentry/core@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@resource-sentry/core/-/core-1.0.1.tgz#1c0b701f2571719f386445b0b6df7078d5b8b2de"
+"@resource-sentry/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@resource-sentry/core/-/core-1.1.0.tgz#a2ba5fc7b8cdde46f643aa2fed7c340fbb5d09b0"
   dependencies:
     "@resource-sentry/utils" "^1.0.0"
     bluebird "^3.5.1"
@@ -23,6 +23,14 @@
     chokidar "2.0.2"
     eventemitter3 "3.0.1"
     minimist "^1.2.0"
+
+"@resource-sentry/reader-properties@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@resource-sentry/reader-properties/-/reader-properties-1.0.0.tgz#43bc752add1c7a0f7f78af51d143409266c762b6"
+  dependencies:
+    "@resource-sentry/utils" "^1.0.0"
+    bluebird "^3.5.1"
+    clone-deep "^4.0.0"
 
 "@resource-sentry/reader-svg@^1.0.0":
   version "1.0.0"
@@ -1630,6 +1638,13 @@ cliui@^4.0.0:
 clone-buffer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/clone-buffer/-/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
+
+clone-deep@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/clone-deep/-/clone-deep-4.0.0.tgz#a41ae54db9048b407d9c73e703297a12e1dfd932"
+  dependencies:
+    kind-of "^6.0.2"
+    shallow-clone "^3.0.0"
 
 clone-response@1.0.2:
   version "1.0.2"
@@ -5220,6 +5235,12 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallow-clone@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/shallow-clone/-/shallow-clone-3.0.0.tgz#317b701facce5e742d4c04c64e1d52f957e22b28"
+  dependencies:
+    kind-of "^6.0.2"
 
 shebang-command@^1.2.0:
   version "1.2.0"

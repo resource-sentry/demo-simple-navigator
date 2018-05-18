@@ -7,7 +7,7 @@
     "build-style": "node-sass ./style/main.scss ./dist/style.css --importer=node_modules/node-sass-tilde-importer",
     "start": "webpack --colors --progress --watch --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-resources": "rs",
+    "watch-resources": "resource-sentry",
     "watch-style": "npm run build-style && npm run build-style -- -w"
   },
   "private": true,
@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/resource-sentry/demo-simple-navigator#readme",
   "devDependencies": {
-    "@resource-sentry/core": "^1.0.1",
+    "@resource-sentry/core": "^1.1.0",
+    "@resource-sentry/reader-properties": "^1.0.0",
     "@resource-sentry/reader-svg": "^1.0.0",
     "@resource-sentry/writer-es2015": "^1.1.0",
     "babel-core": "^6.26.3",
