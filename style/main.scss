@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .menu-list-item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem;
+  margin: 1rem 0;
 
   &__icon {
-    height: 2em;
-    width: 2em;
+    fill: #EAEAEA;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__label {
+    margin-left: 1rem;
+    text-transform: uppercase;
   }
 }
