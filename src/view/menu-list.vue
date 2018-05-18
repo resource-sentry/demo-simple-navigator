@@ -3,6 +3,7 @@
         <menu-list-item
                 v-for="item in items"
                 v-bind:key="item.id"
+                v-bind:id="item.id"
                 v-bind:icon="item.asset"
                 v-bind:label="item.label"></menu-list-item>
     </div>
