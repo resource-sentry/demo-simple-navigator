@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "~bulmaswatch/solar/variables";
+@import "~bulma/bulma";
+@import "~bulmaswatch/solar/overrides";
 
 .menu-list-item {
   align-items: center;
