@@ -5,14 +5,20 @@
 
 .menu-list-item {
   align-items: center;
+  border-radius: $radius;
   cursor: pointer;
   display: flex;
   font-family: 'Montserrat', sans-serif;
   padding: 1rem;
   margin: 1rem 0;
+  transition: background-color 0.2s ease-in-out;
+
+  &--selected {
+    background-color: $grey-dark;
+  }
 
   &__icon {
-    fill: #EAEAEA;
+    fill: $yellow;
     height: 2rem;
     width: 2rem;
   }
