@@ -7,6 +7,24 @@
   padding: 2rem 4rem;
 }
 
+.dashboard {
+  display: flex;
+
+  &__left-panel {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.hero-info {
+  padding: 1rem 2rem;
+
+  &__content {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+}
+
 .menu-list-item {
   align-items: center;
   border-radius: $radius;

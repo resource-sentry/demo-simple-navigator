@@ -2,7 +2,9 @@
     <div class="application">
         <div class="container app-content">
             <div class="dashboard">
-                <menu-list/>
+                <div class="dashboard__left-panel">
+                    <menu-list/>
+                </div>
                 <hero-info/>
             </div>
             <copyright-icons></copyright-icons>

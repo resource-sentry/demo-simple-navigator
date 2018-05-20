@@ -6751,6 +6751,18 @@ a {
 .copyright-icons {
   padding: 2rem 4rem; }
 
+.dashboard {
+  display: flex; }
+  .dashboard__left-panel {
+    flex: 0 0 auto;
+    width: 25%; }
+
+.hero-info {
+  padding: 1rem 2rem; }
+  .hero-info__content {
+    font-size: 1.2rem;
+    line-height: 2.4rem; }
+
 .menu-list-item {
   align-items: center;
   border-radius: 0.4em;
