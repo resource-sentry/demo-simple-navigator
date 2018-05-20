@@ -1,12 +1,12 @@
-const ReaderProperties = require('@resource-sentry/reader-properties'),
-      ReaderSvg        = require('@resource-sentry/reader-svg'),
-      WriterEs2015     = require('@resource-sentry/writer-es2015');
+const ReaderJson   = require('@resource-sentry/reader-json'),
+      ReaderSvg    = require('@resource-sentry/reader-svg'),
+      WriterEs2015 = require('@resource-sentry/writer-es2015');
 
 module.exports = {
     config: {
         input : [
-            new ReaderProperties({
-                entry: './data/heroes.properties'
+            new ReaderJson({
+                entry: './data'
             }),
             new ReaderSvg({
                 entry: 'asset'
