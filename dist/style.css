@@ -6748,6 +6748,9 @@ a {
 .tabs.is-toggle li + li {
   margin-left: -2px; }
 
+.copyright-icons {
+  padding: 2rem 4rem; }
+
 .menu-list-item {
   align-items: center;
   border-radius: 0.4em;

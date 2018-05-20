@@ -3,6 +3,10 @@
 @import "~bulma/bulma";
 @import "~bulmaswatch/solar/overrides";
 
+.copyright-icons {
+  padding: 2rem 4rem;
+}
+
 .menu-list-item {
   align-items: center;
   border-radius: $radius;
