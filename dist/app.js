@@ -79,7 +79,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _copyrightIcons = __webpack_require__(/*! ./copyright-icons.vue */ \"./view/copyright-icons.vue\");\n\nvar _copyrightIcons2 = _interopRequireDefault(_copyrightIcons);\n\nvar _menuList = __webpack_require__(/*! ./menu-list.vue */ \"./view/menu-list.vue\");\n\nvar _menuList2 = _interopRequireDefault(_menuList);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nexports.default = {\n    name: 'application',\n    components: { CopyrightIcons: _copyrightIcons2.default, MenuList: _menuList2.default },\n    data: function data() {\n        return {};\n    }\n};\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _copyrightIcons = __webpack_require__(/*! ./copyright-icons.vue */ \"./view/copyright-icons.vue\");\n\nvar _copyrightIcons2 = _interopRequireDefault(_copyrightIcons);\n\nvar _heroInfo = __webpack_require__(/*! ./hero-info.vue */ \"./view/hero-info.vue\");\n\nvar _heroInfo2 = _interopRequireDefault(_heroInfo);\n\nvar _menuList = __webpack_require__(/*! ./menu-list.vue */ \"./view/menu-list.vue\");\n\nvar _menuList2 = _interopRequireDefault(_menuList);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n    name: 'application',\n    components: { CopyrightIcons: _copyrightIcons2.default, HeroInfo: _heroInfo2.default, MenuList: _menuList2.default },\n    data: function data() {\n        return {};\n    }\n}; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -92,6 +92,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nexports.default = {\n    name: 'copyright-icons'\n};\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/hero-info.vue?vue&type=script&lang=js":
+/*!************************************************************************************************************************************************!*\
+  !*** ../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options!./view/hero-info.vue?vue&type=script&lang=js ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _slicedToArray2 = __webpack_require__(/*! babel-runtime/helpers/slicedToArray */ \"../node_modules/babel-runtime/helpers/slicedToArray.js\");\n\nvar _slicedToArray3 = _interopRequireDefault(_slicedToArray2);\n\nvar _rs = __webpack_require__(/*! ../model/rs */ \"./model/rs.js\");\n\nvar Rs = _interopRequireWildcard(_rs);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n    name: 'hero-info',\n    computed: {\n        content: function content(view) {\n            var content = 'Select your super hero.';\n            var currentId = view.$store.state.currentItemId;\n            var selectedHero = view.$store.state.menuItems.filter(function (hero) {\n                return hero.id === currentId;\n            });\n\n            var _selectedHero = (0, _slicedToArray3.default)(selectedHero, 1),\n                hero = _selectedHero[0];\n\n            if (hero !== undefined) {\n                content = Rs.getResource(hero.bio);\n            }\n\n            return content;\n        }\n    }\n}; //\n//\n//\n//\n//\n//\n\n//# sourceURL=webpack:///./view/hero-info.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -116,6 +128,28 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _menuListItem = __webpack_require__(/*! ./menu-list-item.vue */ \"./view/menu-list-item.vue\");\n\nvar _menuListItem2 = _interopRequireDefault(_menuListItem);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n    name: 'menu-list',\n    components: { MenuListItem: _menuListItem2.default },\n    data: function data(view) {\n        return {\n            items: view.$store.state.menuItems\n        };\n    }\n}; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n//# sourceURL=webpack:///./view/menu-list.vue?../node_modules/babel-loader/lib??ref--0!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/babel-runtime/core-js/get-iterator.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/babel-runtime/core-js/get-iterator.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/get-iterator */ \"../node_modules/core-js/library/fn/get-iterator.js\"), __esModule: true };\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/core-js/get-iterator.js?");
+
+/***/ }),
+
+/***/ "../node_modules/babel-runtime/core-js/is-iterable.js":
+/*!************************************************************!*\
+  !*** ../node_modules/babel-runtime/core-js/is-iterable.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = { \"default\": __webpack_require__(/*! core-js/library/fn/is-iterable */ \"../node_modules/core-js/library/fn/is-iterable.js\"), __esModule: true };\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/core-js/is-iterable.js?");
 
 /***/ }),
 
@@ -165,6 +199,40 @@ eval("\n\nexports.__esModule = true;\n\nvar _assign = __webpack_require__(/*! ..
 
 /***/ }),
 
+/***/ "../node_modules/babel-runtime/helpers/slicedToArray.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/babel-runtime/helpers/slicedToArray.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _isIterable2 = __webpack_require__(/*! ../core-js/is-iterable */ \"../node_modules/babel-runtime/core-js/is-iterable.js\");\n\nvar _isIterable3 = _interopRequireDefault(_isIterable2);\n\nvar _getIterator2 = __webpack_require__(/*! ../core-js/get-iterator */ \"../node_modules/babel-runtime/core-js/get-iterator.js\");\n\nvar _getIterator3 = _interopRequireDefault(_getIterator2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function () {\n  function sliceIterator(arr, i) {\n    var _arr = [];\n    var _n = true;\n    var _d = false;\n    var _e = undefined;\n\n    try {\n      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {\n        _arr.push(_s.value);\n\n        if (i && _arr.length === i) break;\n      }\n    } catch (err) {\n      _d = true;\n      _e = err;\n    } finally {\n      try {\n        if (!_n && _i[\"return\"]) _i[\"return\"]();\n      } finally {\n        if (_d) throw _e;\n      }\n    }\n\n    return _arr;\n  }\n\n  return function (arr, i) {\n    if (Array.isArray(arr)) {\n      return arr;\n    } else if ((0, _isIterable3.default)(Object(arr))) {\n      return sliceIterator(arr, i);\n    } else {\n      throw new TypeError(\"Invalid attempt to destructure non-iterable instance\");\n    }\n  };\n}();\n\n//# sourceURL=webpack:///../node_modules/babel-runtime/helpers/slicedToArray.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/fn/get-iterator.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/library/fn/get-iterator.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../modules/web.dom.iterable */ \"../node_modules/core-js/library/modules/web.dom.iterable.js\");\n__webpack_require__(/*! ../modules/es6.string.iterator */ \"../node_modules/core-js/library/modules/es6.string.iterator.js\");\nmodule.exports = __webpack_require__(/*! ../modules/core.get-iterator */ \"../node_modules/core-js/library/modules/core.get-iterator.js\");\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/fn/get-iterator.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/fn/is-iterable.js":
+/*!*********************************************************!*\
+  !*** ../node_modules/core-js/library/fn/is-iterable.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../modules/web.dom.iterable */ \"../node_modules/core-js/library/modules/web.dom.iterable.js\");\n__webpack_require__(/*! ../modules/es6.string.iterator */ \"../node_modules/core-js/library/modules/es6.string.iterator.js\");\nmodule.exports = __webpack_require__(/*! ../modules/core.is-iterable */ \"../node_modules/core-js/library/modules/core.is-iterable.js\");\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/fn/is-iterable.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/fn/object/assign.js":
 /*!***********************************************************!*\
   !*** ../node_modules/core-js/library/fn/object/assign.js ***!
@@ -198,6 +266,17 @@ eval("module.exports = function (it) {\n  if (typeof it != 'function') throw Typ
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_add-to-unscopables.js":
+/*!**********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_add-to-unscopables.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function () { /* empty */ };\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_add-to-unscopables.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/_an-object.js":
 /*!*************************************************************!*\
   !*** ../node_modules/core-js/library/modules/_an-object.js ***!
@@ -217,6 +296,17 @@ eval("var isObject = __webpack_require__(/*! ./_is-object */ \"../node_modules/c
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// false -> Array#indexOf\n// true  -> Array#includes\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"../node_modules/core-js/library/modules/_to-iobject.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"../node_modules/core-js/library/modules/_to-length.js\");\nvar toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ \"../node_modules/core-js/library/modules/_to-absolute-index.js\");\nmodule.exports = function (IS_INCLUDES) {\n  return function ($this, el, fromIndex) {\n    var O = toIObject($this);\n    var length = toLength(O.length);\n    var index = toAbsoluteIndex(fromIndex, length);\n    var value;\n    // Array#includes uses SameValueZero equality algorithm\n    // eslint-disable-next-line no-self-compare\n    if (IS_INCLUDES && el != el) while (length > index) {\n      value = O[index++];\n      // eslint-disable-next-line no-self-compare\n      if (value != value) return true;\n    // Array#indexOf ignores holes, Array#includes - not\n    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {\n      if (O[index] === el) return IS_INCLUDES || index || 0;\n    } return !IS_INCLUDES && -1;\n  };\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_array-includes.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_classof.js":
+/*!***********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_classof.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// getting tag from 19.1.3.6 Object.prototype.toString()\nvar cof = __webpack_require__(/*! ./_cof */ \"../node_modules/core-js/library/modules/_cof.js\");\nvar TAG = __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('toStringTag');\n// ES3 wrong here\nvar ARG = cof(function () { return arguments; }()) == 'Arguments';\n\n// fallback for IE11 Script Access Denied error\nvar tryGet = function (it, key) {\n  try {\n    return it[key];\n  } catch (e) { /* empty */ }\n};\n\nmodule.exports = function (it) {\n  var O, T, B;\n  return it === undefined ? 'Undefined' : it === null ? 'Null'\n    // @@toStringTag case\n    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T\n    // builtinTag case\n    : ARG ? cof(O)\n    // ES3 arguments fallback\n    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_classof.js?");
 
 /***/ }),
 
@@ -352,6 +442,17 @@ eval("var dP = __webpack_require__(/*! ./_object-dp */ \"../node_modules/core-js
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_html.js":
+/*!********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_html.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var document = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\").document;\nmodule.exports = document && document.documentElement;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_html.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/_ie8-dom-define.js":
 /*!******************************************************************!*\
   !*** ../node_modules/core-js/library/modules/_ie8-dom-define.js ***!
@@ -385,6 +486,52 @@ eval("module.exports = function (it) {\n  return typeof it === 'object' ? it !==
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_iter-create.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_iter-create.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar create = __webpack_require__(/*! ./_object-create */ \"../node_modules/core-js/library/modules/_object-create.js\");\nvar descriptor = __webpack_require__(/*! ./_property-desc */ \"../node_modules/core-js/library/modules/_property-desc.js\");\nvar setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ \"../node_modules/core-js/library/modules/_set-to-string-tag.js\");\nvar IteratorPrototype = {};\n\n// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()\n__webpack_require__(/*! ./_hide */ \"../node_modules/core-js/library/modules/_hide.js\")(IteratorPrototype, __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('iterator'), function () { return this; });\n\nmodule.exports = function (Constructor, NAME, next) {\n  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });\n  setToStringTag(Constructor, NAME + ' Iterator');\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_iter-create.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_iter-define.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_iter-define.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar LIBRARY = __webpack_require__(/*! ./_library */ \"../node_modules/core-js/library/modules/_library.js\");\nvar $export = __webpack_require__(/*! ./_export */ \"../node_modules/core-js/library/modules/_export.js\");\nvar redefine = __webpack_require__(/*! ./_redefine */ \"../node_modules/core-js/library/modules/_redefine.js\");\nvar hide = __webpack_require__(/*! ./_hide */ \"../node_modules/core-js/library/modules/_hide.js\");\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"../node_modules/core-js/library/modules/_iterators.js\");\nvar $iterCreate = __webpack_require__(/*! ./_iter-create */ \"../node_modules/core-js/library/modules/_iter-create.js\");\nvar setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ \"../node_modules/core-js/library/modules/_set-to-string-tag.js\");\nvar getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ \"../node_modules/core-js/library/modules/_object-gpo.js\");\nvar ITERATOR = __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('iterator');\nvar BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`\nvar FF_ITERATOR = '@@iterator';\nvar KEYS = 'keys';\nvar VALUES = 'values';\n\nvar returnThis = function () { return this; };\n\nmodule.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {\n  $iterCreate(Constructor, NAME, next);\n  var getMethod = function (kind) {\n    if (!BUGGY && kind in proto) return proto[kind];\n    switch (kind) {\n      case KEYS: return function keys() { return new Constructor(this, kind); };\n      case VALUES: return function values() { return new Constructor(this, kind); };\n    } return function entries() { return new Constructor(this, kind); };\n  };\n  var TAG = NAME + ' Iterator';\n  var DEF_VALUES = DEFAULT == VALUES;\n  var VALUES_BUG = false;\n  var proto = Base.prototype;\n  var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];\n  var $default = $native || getMethod(DEFAULT);\n  var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;\n  var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;\n  var methods, key, IteratorPrototype;\n  // Fix native\n  if ($anyNative) {\n    IteratorPrototype = getPrototypeOf($anyNative.call(new Base()));\n    if (IteratorPrototype !== Object.prototype && IteratorPrototype.next) {\n      // Set @@toStringTag to native iterators\n      setToStringTag(IteratorPrototype, TAG, true);\n      // fix for some old engines\n      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);\n    }\n  }\n  // fix Array#{values, @@iterator}.name in V8 / FF\n  if (DEF_VALUES && $native && $native.name !== VALUES) {\n    VALUES_BUG = true;\n    $default = function values() { return $native.call(this); };\n  }\n  // Define iterator\n  if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {\n    hide(proto, ITERATOR, $default);\n  }\n  // Plug for library\n  Iterators[NAME] = $default;\n  Iterators[TAG] = returnThis;\n  if (DEFAULT) {\n    methods = {\n      values: DEF_VALUES ? $default : getMethod(VALUES),\n      keys: IS_SET ? $default : getMethod(KEYS),\n      entries: $entries\n    };\n    if (FORCED) for (key in methods) {\n      if (!(key in proto)) redefine(proto, key, methods[key]);\n    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);\n  }\n  return methods;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_iter-define.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_iter-step.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_iter-step.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function (done, value) {\n  return { value: value, done: !!done };\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_iter-step.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_iterators.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_iterators.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = {};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_iterators.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/_library.js":
 /*!***********************************************************!*\
   !*** ../node_modules/core-js/library/modules/_library.js ***!
@@ -408,6 +555,17 @@ eval("\n// 19.1.2.1 Object.assign(target, source, ...)\nvar getKeys = __webpack_
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_object-create.js":
+/*!*****************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-create.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])\nvar anObject = __webpack_require__(/*! ./_an-object */ \"../node_modules/core-js/library/modules/_an-object.js\");\nvar dPs = __webpack_require__(/*! ./_object-dps */ \"../node_modules/core-js/library/modules/_object-dps.js\");\nvar enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ \"../node_modules/core-js/library/modules/_enum-bug-keys.js\");\nvar IE_PROTO = __webpack_require__(/*! ./_shared-key */ \"../node_modules/core-js/library/modules/_shared-key.js\")('IE_PROTO');\nvar Empty = function () { /* empty */ };\nvar PROTOTYPE = 'prototype';\n\n// Create object with fake `null` prototype: use iframe Object with cleared prototype\nvar createDict = function () {\n  // Thrash, waste and sodomy: IE GC bug\n  var iframe = __webpack_require__(/*! ./_dom-create */ \"../node_modules/core-js/library/modules/_dom-create.js\")('iframe');\n  var i = enumBugKeys.length;\n  var lt = '<';\n  var gt = '>';\n  var iframeDocument;\n  iframe.style.display = 'none';\n  __webpack_require__(/*! ./_html */ \"../node_modules/core-js/library/modules/_html.js\").appendChild(iframe);\n  iframe.src = 'javascript:'; // eslint-disable-line no-script-url\n  // createDict = iframe.contentWindow.Object;\n  // html.removeChild(iframe);\n  iframeDocument = iframe.contentWindow.document;\n  iframeDocument.open();\n  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);\n  iframeDocument.close();\n  createDict = iframeDocument.F;\n  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];\n  return createDict();\n};\n\nmodule.exports = Object.create || function create(O, Properties) {\n  var result;\n  if (O !== null) {\n    Empty[PROTOTYPE] = anObject(O);\n    result = new Empty();\n    Empty[PROTOTYPE] = null;\n    // add \"__proto__\" for Object.getPrototypeOf polyfill\n    result[IE_PROTO] = O;\n  } else result = createDict();\n  return Properties === undefined ? result : dPs(result, Properties);\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-create.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/_object-dp.js":
 /*!*************************************************************!*\
   !*** ../node_modules/core-js/library/modules/_object-dp.js ***!
@@ -419,6 +577,17 @@ eval("var anObject = __webpack_require__(/*! ./_an-object */ \"../node_modules/c
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_object-dps.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-dps.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var dP = __webpack_require__(/*! ./_object-dp */ \"../node_modules/core-js/library/modules/_object-dp.js\");\nvar anObject = __webpack_require__(/*! ./_an-object */ \"../node_modules/core-js/library/modules/_an-object.js\");\nvar getKeys = __webpack_require__(/*! ./_object-keys */ \"../node_modules/core-js/library/modules/_object-keys.js\");\n\nmodule.exports = __webpack_require__(/*! ./_descriptors */ \"../node_modules/core-js/library/modules/_descriptors.js\") ? Object.defineProperties : function defineProperties(O, Properties) {\n  anObject(O);\n  var keys = getKeys(Properties);\n  var length = keys.length;\n  var i = 0;\n  var P;\n  while (length > i) dP.f(O, P = keys[i++], Properties[P]);\n  return O;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-dps.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/_object-gops.js":
 /*!***************************************************************!*\
   !*** ../node_modules/core-js/library/modules/_object-gops.js ***!
@@ -427,6 +596,17 @@ eval("var anObject = __webpack_require__(/*! ./_an-object */ \"../node_modules/c
 /***/ (function(module, exports) {
 
 eval("exports.f = Object.getOwnPropertySymbols;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-gops.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_object-gpo.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_object-gpo.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)\nvar has = __webpack_require__(/*! ./_has */ \"../node_modules/core-js/library/modules/_has.js\");\nvar toObject = __webpack_require__(/*! ./_to-object */ \"../node_modules/core-js/library/modules/_to-object.js\");\nvar IE_PROTO = __webpack_require__(/*! ./_shared-key */ \"../node_modules/core-js/library/modules/_shared-key.js\")('IE_PROTO');\nvar ObjectProto = Object.prototype;\n\nmodule.exports = Object.getPrototypeOf || function (O) {\n  O = toObject(O);\n  if (has(O, IE_PROTO)) return O[IE_PROTO];\n  if (typeof O.constructor == 'function' && O instanceof O.constructor) {\n    return O.constructor.prototype;\n  } return O instanceof Object ? ObjectProto : null;\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_object-gpo.js?");
 
 /***/ }),
 
@@ -474,6 +654,28 @@ eval("module.exports = function (bitmap, value) {\n  return {\n    enumerable: !
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_redefine.js":
+/*!************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_redefine.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./_hide */ \"../node_modules/core-js/library/modules/_hide.js\");\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_redefine.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_set-to-string-tag.js":
+/*!*********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_set-to-string-tag.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var def = __webpack_require__(/*! ./_object-dp */ \"../node_modules/core-js/library/modules/_object-dp.js\").f;\nvar has = __webpack_require__(/*! ./_has */ \"../node_modules/core-js/library/modules/_has.js\");\nvar TAG = __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('toStringTag');\n\nmodule.exports = function (it, tag, stat) {\n  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_set-to-string-tag.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/_shared-key.js":
 /*!**************************************************************!*\
   !*** ../node_modules/core-js/library/modules/_shared-key.js ***!
@@ -493,6 +695,17 @@ eval("var shared = __webpack_require__(/*! ./_shared */ \"../node_modules/core-j
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var core = __webpack_require__(/*! ./_core */ \"../node_modules/core-js/library/modules/_core.js\");\nvar global = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\");\nvar SHARED = '__core-js_shared__';\nvar store = global[SHARED] || (global[SHARED] = {});\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: core.version,\n  mode: __webpack_require__(/*! ./_library */ \"../node_modules/core-js/library/modules/_library.js\") ? 'pure' : 'global',\n  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'\n});\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_shared.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/_string-at.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_string-at.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var toInteger = __webpack_require__(/*! ./_to-integer */ \"../node_modules/core-js/library/modules/_to-integer.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"../node_modules/core-js/library/modules/_defined.js\");\n// true  -> String#at\n// false -> String#codePointAt\nmodule.exports = function (TO_STRING) {\n  return function (that, pos) {\n    var s = String(defined(that));\n    var i = toInteger(pos);\n    var l = s.length;\n    var a, b;\n    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;\n    a = s.charCodeAt(i);\n    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff\n      ? TO_STRING ? s.charAt(i) : a\n      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;\n  };\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_string-at.js?");
 
 /***/ }),
 
@@ -573,6 +786,62 @@ eval("var id = 0;\nvar px = Math.random();\nmodule.exports = function (key) {\n 
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/_wks.js":
+/*!*******************************************************!*\
+  !*** ../node_modules/core-js/library/modules/_wks.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var store = __webpack_require__(/*! ./_shared */ \"../node_modules/core-js/library/modules/_shared.js\")('wks');\nvar uid = __webpack_require__(/*! ./_uid */ \"../node_modules/core-js/library/modules/_uid.js\");\nvar Symbol = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\").Symbol;\nvar USE_SYMBOL = typeof Symbol == 'function';\n\nvar $exports = module.exports = function (name) {\n  return store[name] || (store[name] =\n    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));\n};\n\n$exports.store = store;\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/_wks.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/core.get-iterator-method.js":
+/*!***************************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/core.get-iterator-method.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var classof = __webpack_require__(/*! ./_classof */ \"../node_modules/core-js/library/modules/_classof.js\");\nvar ITERATOR = __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('iterator');\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"../node_modules/core-js/library/modules/_iterators.js\");\nmodule.exports = __webpack_require__(/*! ./_core */ \"../node_modules/core-js/library/modules/_core.js\").getIteratorMethod = function (it) {\n  if (it != undefined) return it[ITERATOR]\n    || it['@@iterator']\n    || Iterators[classof(it)];\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/core.get-iterator-method.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/core.get-iterator.js":
+/*!********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/core.get-iterator.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var anObject = __webpack_require__(/*! ./_an-object */ \"../node_modules/core-js/library/modules/_an-object.js\");\nvar get = __webpack_require__(/*! ./core.get-iterator-method */ \"../node_modules/core-js/library/modules/core.get-iterator-method.js\");\nmodule.exports = __webpack_require__(/*! ./_core */ \"../node_modules/core-js/library/modules/_core.js\").getIterator = function (it) {\n  var iterFn = get(it);\n  if (typeof iterFn != 'function') throw TypeError(it + ' is not iterable!');\n  return anObject(iterFn.call(it));\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/core.get-iterator.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/core.is-iterable.js":
+/*!*******************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/core.is-iterable.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var classof = __webpack_require__(/*! ./_classof */ \"../node_modules/core-js/library/modules/_classof.js\");\nvar ITERATOR = __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('iterator');\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"../node_modules/core-js/library/modules/_iterators.js\");\nmodule.exports = __webpack_require__(/*! ./_core */ \"../node_modules/core-js/library/modules/_core.js\").isIterable = function (it) {\n  var O = Object(it);\n  return O[ITERATOR] !== undefined\n    || '@@iterator' in O\n    // eslint-disable-next-line no-prototype-builtins\n    || Iterators.hasOwnProperty(classof(O));\n};\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/core.is-iterable.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es6.array.iterator.js":
+/*!*********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es6.array.iterator.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ \"../node_modules/core-js/library/modules/_add-to-unscopables.js\");\nvar step = __webpack_require__(/*! ./_iter-step */ \"../node_modules/core-js/library/modules/_iter-step.js\");\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"../node_modules/core-js/library/modules/_iterators.js\");\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"../node_modules/core-js/library/modules/_to-iobject.js\");\n\n// 22.1.3.4 Array.prototype.entries()\n// 22.1.3.13 Array.prototype.keys()\n// 22.1.3.29 Array.prototype.values()\n// 22.1.3.30 Array.prototype[@@iterator]()\nmodule.exports = __webpack_require__(/*! ./_iter-define */ \"../node_modules/core-js/library/modules/_iter-define.js\")(Array, 'Array', function (iterated, kind) {\n  this._t = toIObject(iterated); // target\n  this._i = 0;                   // next index\n  this._k = kind;                // kind\n// 22.1.5.2.1 %ArrayIteratorPrototype%.next()\n}, function () {\n  var O = this._t;\n  var kind = this._k;\n  var index = this._i++;\n  if (!O || index >= O.length) {\n    this._t = undefined;\n    return step(1);\n  }\n  if (kind == 'keys') return step(0, index);\n  if (kind == 'values') return step(0, O[index]);\n  return step(0, [index, O[index]]);\n}, 'values');\n\n// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)\nIterators.Arguments = Iterators.Array;\n\naddToUnscopables('keys');\naddToUnscopables('values');\naddToUnscopables('entries');\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/es6.array.iterator.js?");
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/es6.object.assign.js":
 /*!********************************************************************!*\
   !*** ../node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -592,6 +861,29 @@ eval("// 19.1.3.1 Object.assign(target, source)\nvar $export = __webpack_require
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var $export = __webpack_require__(/*! ./_export */ \"../node_modules/core-js/library/modules/_export.js\");\n// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)\n$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ \"../node_modules/core-js/library/modules/_descriptors.js\"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ \"../node_modules/core-js/library/modules/_object-dp.js\").f });\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/es6.object.define-property.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es6.string.iterator.js":
+/*!**********************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es6.string.iterator.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar $at = __webpack_require__(/*! ./_string-at */ \"../node_modules/core-js/library/modules/_string-at.js\")(true);\n\n// 21.1.3.27 String.prototype[@@iterator]()\n__webpack_require__(/*! ./_iter-define */ \"../node_modules/core-js/library/modules/_iter-define.js\")(String, 'String', function (iterated) {\n  this._t = String(iterated); // target\n  this._i = 0;                // next index\n// 21.1.5.2.1 %StringIteratorPrototype%.next()\n}, function () {\n  var O = this._t;\n  var index = this._i;\n  var point;\n  if (index >= O.length) return { value: undefined, done: true };\n  point = $at(O, index);\n  this._i += point.length;\n  return { value: point, done: false };\n});\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/es6.string.iterator.js?");
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/web.dom.iterable.js":
+/*!*******************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/web.dom.iterable.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./es6.array.iterator */ \"../node_modules/core-js/library/modules/es6.array.iterator.js\");\nvar global = __webpack_require__(/*! ./_global */ \"../node_modules/core-js/library/modules/_global.js\");\nvar hide = __webpack_require__(/*! ./_hide */ \"../node_modules/core-js/library/modules/_hide.js\");\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"../node_modules/core-js/library/modules/_iterators.js\");\nvar TO_STRING_TAG = __webpack_require__(/*! ./_wks */ \"../node_modules/core-js/library/modules/_wks.js\")('toStringTag');\n\nvar DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +\n  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +\n  'MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,' +\n  'SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,' +\n  'TextTrackList,TouchList').split(',');\n\nfor (var i = 0; i < DOMIterables.length; i++) {\n  var NAME = DOMIterables[i];\n  var Collection = global[NAME];\n  var proto = Collection && Collection.prototype;\n  if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);\n  Iterators[NAME] = Iterators.Array;\n}\n\n\n//# sourceURL=webpack:///../node_modules/core-js/library/modules/web.dom.iterable.js?");
 
 /***/ }),
 
@@ -636,7 +928,7 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"application\" }, [\n    _c(\n      \"div\",\n      { staticClass: \"container app-content\" },\n      [_c(\"menu-list\"), _vm._v(\" \"), _c(\"copyright-icons\")],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"application\" }, [\n    _c(\n      \"div\",\n      { staticClass: \"container app-content\" },\n      [\n        _c(\n          \"div\",\n          { staticClass: \"dashboard\" },\n          [_c(\"menu-list\"), _vm._v(\" \"), _c(\"hero-info\")],\n          1\n        ),\n        _vm._v(\" \"),\n        _c(\"copyright-icons\")\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/application.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -649,6 +941,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"div\", { staticClass: \"copyright-icons\" }, [\n      _c(\"div\", [\n        _vm._v(\"\\n        Icons made by \"),\n        _c(\n          \"a\",\n          { attrs: { href: \"http://www.freepik.com\", title: \"Freepik\" } },\n          [_vm._v(\"Freepik\")]\n        ),\n        _vm._v(\" from\\n        \"),\n        _c(\n          \"a\",\n          { attrs: { href: \"https://www.flaticon.com/\", title: \"Flaticon\" } },\n          [_vm._v(\"www.flaticon.com\")]\n        ),\n        _vm._v(\" is licensed by\\n        \"),\n        _c(\n          \"a\",\n          {\n            attrs: {\n              href: \"http://creativecommons.org/licenses/by/3.0/\",\n              title: \"Creative Commons BY 3.0\",\n              target: \"_blank\"\n            }\n          },\n          [_vm._v(\"CC 3.0 BY\")]\n        )\n      ])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/hero-info.vue?vue&type=template&id=9c99dd76":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options!./view/hero-info.vue?vue&type=template&id=9c99dd76 ***!
+  \******************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"hero-info\" }, [\n    _vm._v(\"\\n    \" + _vm._s(_vm.content) + \"\\n\")\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./view/hero-info.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -852,6 +1156,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./copyright-icons.vue?vue&type=template&id=771dcdb8 */ \"../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/copyright-icons.vue?vue&type=template&id=771dcdb8\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_copyright_icons_vue_vue_type_template_id_771dcdb8__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./view/copyright-icons.vue?");
+
+/***/ }),
+
+/***/ "./view/hero-info.vue":
+/*!****************************!*\
+  !*** ./view/hero-info.vue ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hero_info_vue_vue_type_template_id_9c99dd76__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hero-info.vue?vue&type=template&id=9c99dd76 */ \"./view/hero-info.vue?vue&type=template&id=9c99dd76\");\n/* harmony import */ var _hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero-info.vue?vue&type=script&lang=js */ \"./view/hero-info.vue?vue&type=script&lang=js\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"../node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _hero_info_vue_vue_type_template_id_9c99dd76__WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _hero_info_vue_vue_type_template_id_9c99dd76__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"view/hero-info.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./view/hero-info.vue?");
+
+/***/ }),
+
+/***/ "./view/hero-info.vue?vue&type=script&lang=js":
+/*!****************************************************!*\
+  !*** ./view/hero-info.vue?vue&type=script&lang=js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--0!../../node_modules/vue-loader/lib??vue-loader-options!./hero-info.vue?vue&type=script&lang=js */ \"../node_modules/babel-loader/lib/index.js??ref--0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/hero-info.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_babel_loader_lib_index_js_ref_0_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./view/hero-info.vue?");
+
+/***/ }),
+
+/***/ "./view/hero-info.vue?vue&type=template&id=9c99dd76":
+/*!**********************************************************!*\
+  !*** ./view/hero-info.vue?vue&type=template&id=9c99dd76 ***!
+  \**********************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_template_id_9c99dd76__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./hero-info.vue?vue&type=template&id=9c99dd76 */ \"../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./view/hero-info.vue?vue&type=template&id=9c99dd76\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_template_id_9c99dd76__WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_hero_info_vue_vue_type_template_id_9c99dd76__WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./view/hero-info.vue?");
 
 /***/ }),
 
